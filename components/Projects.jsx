@@ -2,11 +2,11 @@ import Image from "next/image";
 import { FaEye } from "react-icons/fa";
 
 // images
-import kadosh from "../public/images/kadosh.png";
-import hotel from "../public/images/hotel.png";
-import restaurant from "../public/images/restaurant.png";
-import rhm from "../public/images/rhm.png";
-import todo from "../public/images/todo.png";
+import kadosh from "../public/images/kadosh.jpg";
+import hotel from "../public/images/hotel.jpg";
+import restaurant from "../public/images/restaurant.jpg";
+import rhm from "../public/images/rhm.jpg";
+import todo from "../public/images/todo.jpg";
 
 // animate in view component
 import Hoc from "./Hoc";
