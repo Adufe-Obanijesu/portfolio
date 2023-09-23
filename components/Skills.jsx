@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 
 import { FaCss3, FaFigma, FaHtml5, FaReact } from "react-icons/fa";
-import { DiJavascript1, DiNodejs } from "react-icons/di";
+import { DiJavascript1 } from "react-icons/di";
 import { SiExpress, SiFirebase, SiMongodb, SiNextdotjs } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
+import { BiLogoTailwindCss } from "react-icons/bi";
 import { AiFillGithub } from "react-icons/ai";
 
 // animate in view component
@@ -97,11 +98,11 @@ const Skills = () => {
 
                 <Hoc><div>
                     <div className="flex justify-center">
-                        <div className="rounded-full h-24 w-24 bg-green-400 flex justify-center items-center">
-                            <DiNodejs className="text-white text-5xl" />
+                        <div className="rounded-full h-24 w-24 bg-blue-400 flex justify-center items-center">
+                            <BiLogoTailwindCss className="text-white text-5xl" />
                         </div>
                     </div>
-                    <p className="font-semibold text-center mt-4">Node.js</p>
+                    <p className="font-semibold text-center mt-4">TailwindCSS</p>
                 </div></Hoc>
 
 

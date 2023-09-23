@@ -37,7 +37,7 @@ const Experience = () => {
 			        </div>
 			        <time className="mb-1 text-sm font-normal leading-none text-gray-400">June 2020 - July 2023</time>
 			        <h3 className="font-quicksand tracking-wider text-xl font-bold text-gray-900">Full Stack Developer @ WeVoteYou</h3>
-			        <p className="text-base font-normal text-gray-500">It is a platform established to find lasting solutions to Online Paid Voting System, Event Ticketing, and Opinion Polls. I was contracted to develop and manage a 3 in 1 web application using React.JS, PHP and MySQL Database.</p>
+			        <p className="text-base font-normal text-gray-500">It is a platform established to find lasting solutions to Online Paid Voting System, Event Ticketing, and Opinion Polls. I was contracted to develop and manage a 3 in 1 web application using React.js, PHP and MySQL Database.</p>
 			    </li></Hoc>
 			</ol>
 

@@ -1,46 +1,36 @@
-"use client"
+import Head from "next/head";
+import '../styles/globals.css'
 
-import { useState } from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
-
-// css
-import "../styles/globals.css";
-
-// components
-import Sidebar from "../components/Sidebar";
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Skills from "../components/Skills";
-import Experience from "../components/Experience";
-import Projects from "../components/Projects";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
-
-function App() {
-
-  const [ showSidebar, setShowSidebar ] = useState(false);
-  const [ isTouched, setIsTouched ] = useState(false);
-
+function MyApp({ Component, pageProps }) {
   return (
-    <main className="lg:mx-20 md:mr-20 grid lg:grid-cols-4 md:grid-cols-5 gap-6 relative">
-      <span className={`${isTouched == true ? "hidden" : "block md:hidden"} z-0 fixed left-10 top-5 animate-ping bg-gray-500 h-[10px] w-[10px] rounded-full`}></span>
-      <RxHamburgerMenu className="fixed md:hidden text-4xl left-4 top-4 cursor-pointer z-20" onClick={() => {
-        setShowSidebar(true);
-        setIsTouched(true);
-      }} />
-      <div className={`h-screen w-screen bg-black opacity-30 fixed z-10 ${showSidebar ? "block" : "hidden"}`} onClick={() => setShowSidebar(false)}></div>
-      <Sidebar show={showSidebar} setShow={setShowSidebar} />
-      <div className="px-6 md:px-0 col-span-3 lg:col-start-2 md:col-start-3">
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Contact />
-        <Footer />
-      </div>
-    </main>
+    <>
+      <Head>
+        <title>Obanijesu Adufe</title>
+        <meta name="description" content="Building stunning and aesthetic websites to help businesses large or small boost their brand awareness, increase their customer base and drive profit" />
+        <meta name="image" content="https://obanijesuadufe.com/og.png" />
+        <meta property="og:title" content="Obanijesu Adufe" />
+        <meta property="og:description" content="Building stunning and aesthetic websites to help businesses large or small boost their brand awareness, increase their customer base and drive profit" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="Obanijesu Adufe" />
+        <meta property="og:url" content="https://obanijesuadufe.com" />
+        <meta property="og:image" content="https://obanijesuadufe.com/og.png" />
+        <meta property="twitter:title" content="Obanijesu Adufe" />
+        <meta property="twitter:description" content="Building stunning and aesthetic websites to help businesses large or small boost their brand awareness, increase their customer base and drive profit" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:creator" content="@AdufeObanijesu" />
+        <meta property="twitter:site" content="@AdufeObanijesu" />
+        <meta property="twitter:url" content="https://obanijesuadufe.com" />
+        <meta property="twitter:image" content="https://obanijesuadufe.com/og.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+      </Head>
+  
+      <Component {...pageProps} />
+    </>
   )
 }
 
-export default App
+export default MyApp

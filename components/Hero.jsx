@@ -1,4 +1,4 @@
-import { FaReact } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
 import { BiLogoTailwindCss } from "react-icons/bi";
 
 // animate in view component
@@ -13,7 +13,7 @@ const Hero = () => {
                 </h1></Hoc>
 
                 <Hoc><p className="mt-4 text-lg">
-                    My personal portfolio built with React.js <FaReact className="inline text-blue-400 text-xl" /> and TailwindCSS <BiLogoTailwindCss className="inline text-blue-400 text-xl" />
+                    My personal portfolio built with Next.js <SiNextdotjs className="inline text-black text-xl" /> and TailwindCSS <BiLogoTailwindCss className="inline text-blue-400 text-xl" />
                 </p></Hoc>
             </div>
 
