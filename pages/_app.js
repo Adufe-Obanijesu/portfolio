@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Obanijesu Adufe</title>
-        <meta name="description" content="Building stunning and aesthetic websites to help businesses large or small boost their brand awareness, increase their customer base and drive profit" />
+        <meta name="description" content="Obanijesu Adufe is a software engineer who builds stunning and aesthetic websites to help businesses large or small boost their brand awareness, increase their customer base and drive profit" />
         <meta name="image" content="https://obanijesuadufe.com/og.png" />
         <meta property="og:title" content="Obanijesu Adufe" />
         <meta property="og:description" content="Building stunning and aesthetic websites to help businesses large or small boost their brand awareness, increase their customer base and drive profit" />

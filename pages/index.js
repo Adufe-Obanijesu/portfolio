@@ -22,14 +22,21 @@ function App() {
   const [ isTouched, setIsTouched ] = useState(false);
 
   return (
-    <main className="lg:mx-20 md:mr-20 grid lg:grid-cols-4 md:grid-cols-5 gap-6 relative">
-      <span className={`${isTouched == true ? "hidden" : "block md:hidden"} z-0 fixed left-10 top-5 animate-ping bg-gray-500 h-[10px] w-[10px] rounded-full`}></span>
-      <RxHamburgerMenu className="fixed md:hidden text-4xl left-4 top-4 cursor-pointer z-20" onClick={() => {
+    <main className="lg:px-20 md:pr-20 grid lg:grid-cols-4 md:grid-cols-5 gap-6 relative bg-slate-900">
+      <span className={`${isTouched == true ? "hidden" : "block md:hidden"} z-0 fixed left-10 top-5 animate-ping bg-gray-400 h-[10px] w-[10px] rounded-full`}></span>
+      <RxHamburgerMenu className="fixed text-slate-300 md:hidden text-4xl left-4 top-4 cursor-pointer z-20" onClick={() => {
         setShowSidebar(true);
         setIsTouched(true);
       }} />
-      <div className={`h-screen w-screen bg-black opacity-30 fixed z-10 ${showSidebar ? "block" : "hidden"}`} onClick={() => setShowSidebar(false)}></div>
-      <Sidebar show={showSidebar} setShow={setShowSidebar} />
+      <div className={`h-screen w-screen bg-black opacity-40 blur-lg fixed z-10 ${showSidebar ? "block" : "hidden"}`} onClick={() => setShowSidebar(false)}></div>
+      <div className="md:hidden">
+        {
+          showSidebar && <Sidebar show={showSidebar} setShow={setShowSidebar} />
+        }
+      </div>
+      <div className="hidden md:block">
+        <Sidebar show={showSidebar} setShow={setShowSidebar} />
+      </div>    
       <div className="px-6 md:px-0 col-span-3 lg:col-start-2 md:col-start-3">
         <Hero />
         <About />

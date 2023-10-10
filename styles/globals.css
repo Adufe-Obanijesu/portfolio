@@ -21,15 +21,15 @@ p, li, button {
 }
 
 p {
-    @apply leading-7 text-gray-800;
+    @apply leading-7 text-slate-400 font-semibold;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    @apply font-playfair tracking-[0.2em];
+    @apply font-playfair tracking-[0.2em] text-white;
 }
 
 .sidebarLink {
-    @apply lg:my-3 my-2 cursor-pointer uppercase text-xs tracking-widest hover:text-blue-400 hover:border-b border-blue-400 py-1;
+    @apply lg:my-3 my-2 cursor-pointer uppercase text-xs tracking-widest text-slate-400 hover:text-blue-400 border-b border-slate-800 hover:border-blue-400 py-1;
 }
 
 /*.active {

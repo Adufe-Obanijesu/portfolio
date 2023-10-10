@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 
 import { FaCss3, FaFigma, FaHtml5, FaReact } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
@@ -13,10 +14,29 @@ import Hoc from "./Hoc";
 // icons
 import { FaTools } from "react-icons/fa";
 
+const container = {
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: .3,
+        }
+    },
+    hidden: {
+        opacity: .9,
+    }
+}
+
+const children = {
+    scale: {
+        scale: [1, 1.1, 1],
+    },
+}
+
+
 const Skills = () => {
 
     return (
-        <section id="skills" className="md:py-16 py-10 relative">
+        <motion.section variants={container} initial="hidden" animate="visible" id="skills" className="md:py-16 py-10 relative">
             <Hoc><p className="smallHeading">my specialty</p></Hoc>
         
             <Hoc><h3 className="heading">my skills</h3></Hoc>
@@ -26,101 +46,101 @@ const Skills = () => {
             </p></Hoc>
 
             <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-8 mt-8">
-                <Hoc><div>
+                <Hoc><div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
                     <div className="flex justify-center">
-                        <div className="rounded-full h-24 w-24 bg-red-400 flex justify-center items-center">
+                        <motion.div variants={children} whileInView="scale" className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-red-400 flex justify-center items-center">
                             <FaHtml5 className="text-white text-5xl" />
-                        </div>
+                        </motion.div>
                     </div>
                     <p className="font-semibold text-center mt-4">HTML5</p>
                 </div></Hoc>
 
                 
-                <Hoc><div>
+                <Hoc><div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
                     <div className="flex justify-center">
-                        <div className="rounded-full h-24 w-24 bg-blue-400 flex justify-center items-center">
+                        <motion.div variants={children} whileInView="scale" className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-blue-400 flex justify-center items-center">
                             <FaCss3 className="text-white text-5xl" />
-                        </div>
+                        </motion.div>
                     </div>
                     <p className="font-semibold text-center mt-4">CSS3</p>
                 </div></Hoc>
 
 
-                <Hoc><div>
+                <Hoc><div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
                     <div className="flex justify-center">
-                        <div className="rounded-full h-24 w-24 bg-yellow-400 flex justify-center items-center">
+                        <motion.div variants={children} whileInView="scale" className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-yellow-400 flex justify-center items-center">
                             <DiJavascript1 className="text-white text-5xl" />
-                        </div>
+                        </motion.div>
                     </div>
                     <p className="font-semibold text-center mt-4">JavaScript</p>
                 </div></Hoc>
 
 
-                <Hoc><div>
+                <Hoc><div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
                     <div className="flex justify-center">
-                        <div className="rounded-full h-24 w-24 bg-blue-400 flex justify-center items-center">
+                        <motion.div variants={children} whileInView="scale" className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-blue-400 flex justify-center items-center">
                             <FaReact className="text-white text-5xl" />
-                        </div>
+                        </motion.div>
                     </div>
                     <p className="font-semibold text-center mt-4">React.js</p>
                 </div></Hoc>
 
 
-                <Hoc><div>
+                <Hoc><div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
                     <div className="flex justify-center">
-                        <div className="rounded-full h-24 w-24 bg-black flex justify-center items-center">
+                        <motion.div variants={children} whileInView="scale" className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-black flex justify-center items-center">
                             <SiNextdotjs className="text-white text-5xl" />
-                        </div>
+                        </motion.div>
                     </div>
                     <p className="font-semibold text-center mt-4">Next.js</p>
                 </div></Hoc>
 
 
-                <Hoc><div>
+                <Hoc><div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
                     <div className="flex justify-center">
-                        <div className="rounded-full h-24 w-24 bg-yellow-400 flex justify-center items-center">
+                        <motion.div variants={children} whileInView="scale" className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-yellow-400 flex justify-center items-center">
                             <SiFirebase className="text-white text-5xl" />
-                        </div>
+                        </motion.div>
                     </div>
                     <p className="font-semibold text-center mt-4">Firebase</p>
                 </div></Hoc>
 
 
-                <Hoc><div>
+                <Hoc><div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
                     <div className="flex justify-center">
-                        <div className="rounded-full h-24 w-24 bg-red-400 flex justify-center items-center">
+                        <motion.div variants={children} whileInView="scale" className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-red-400 flex justify-center items-center">
                             <FaFigma className="text-white text-5xl" />
-                        </div>
+                        </motion.div>
                     </div>
                     <p className="font-semibold text-center mt-4">Figma</p>
                 </div></Hoc>
 
 
-                <Hoc><div>
+                <Hoc><div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
                     <div className="flex justify-center">
-                        <div className="rounded-full h-24 w-24 bg-blue-400 flex justify-center items-center">
+                        <motion.div variants={children} whileInView="scale" className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-blue-400 flex justify-center items-center">
                             <BiLogoTailwindCss className="text-white text-5xl" />
-                        </div>
+                        </motion.div>
                     </div>
                     <p className="font-semibold text-center mt-4">TailwindCSS</p>
                 </div></Hoc>
 
 
-                <Hoc><div>
+                <Hoc><div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
                     <div className="flex justify-center">
-                        <div className="rounded-full h-24 w-24 bg-orange-600 flex justify-center items-center">
+                        <motion.div variants={children} whileInView="scale" className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-orange-600 flex justify-center items-center">
                             <BsGit className="text-white text-5xl" />
-                        </div>
+                        </motion.div>
                     </div>
                     <p className="font-semibold text-center mt-4">Git</p>
                 </div></Hoc>
 
 
-                <Hoc><div>
+                <Hoc><div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
                     <div className="flex justify-center">
-                        <div className="rounded-full h-24 w-24 bg-black flex justify-center items-center">
+                        <motion.div variants={children} whileInView="scale" className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-black flex justify-center items-center">
                             <AiFillGithub className="text-white text-5xl" />
-                        </div>
+                        </motion.div>
                     </div>
                     <p className="font-semibold text-center mt-4">Github</p>
                 </div></Hoc>
@@ -128,7 +148,7 @@ const Skills = () => {
 
             </div>
 
-        </section>
+        </motion.section>
     )
 }
 

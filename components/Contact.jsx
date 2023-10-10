@@ -25,32 +25,32 @@ const Contact = () => {
             <div className="mt-8">
 
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-                    <Hoc><div className="flex gap-4 items-center mb-4">
-                        <span className="bg-gray-100 rounded h-28 w-28 flex justify-center items-center">
+                    <Hoc><div className="flex gap-4 lg:flex-row md:flex-col items-center mb-4">
+                    <Link className="" href="mailto:obanijesuadufe8@gmail.com"><span className="bg-slate-800/50 rounded-lg h-28 w-28 flex justify-center items-center">
                             <LuMail className="text-4xl text-red-500" />
-                        </span>
-                        <Link className="text-blue-500" href="mailto:obanijesuadufe8@gmail.com">obanijesuadufe@gmail.com</Link>
+                        </span></Link>
+                        <Link className="text-blue-300" href="mailto:obanijesuadufe8@gmail.com">obanijesuadufe@gmail.com</Link>
                     </div></Hoc>
 
-                    <Hoc><div className="flex gap-4 items-center mb-4">
-                        <span className="bg-gray-100 rounded h-28 w-28 flex justify-center items-center">
+                    <Hoc><div className="flex gap-4 lg:flex-row md:flex-col items-center mb-4">
+                    <Link className="" href="https://ng.linkedin.com/in/obanijesu-adufe"><span className="bg-slate-800/50 rounded-lg h-28 w-28 flex justify-center items-center">
                             <FaLinkedinIn className="text-4xl text-blue-600" />
-                        </span>
-                        <Link className="text-blue-500" href="https://ng.linkedin.com/in/obanijesu-adufe">obanijesu-adufe</Link>
+                        </span></Link>
+                        <Link className="text-blue-300" href="https://ng.linkedin.com/in/obanijesu-adufe">obanijesu-adufe</Link>
                     </div></Hoc>
 
-                    <Hoc><div className="flex gap-4 items-center mb-4">
-                        <span className="bg-gray-100 rounded h-28 w-28 flex justify-center items-center">
+                    <Hoc><div className="flex gap-4 lg:flex-row md:flex-col items-center mb-4">
+                    <Link className="" href="https://github.com/Adufe-Obanijesu"><span className="bg-slate-800/50 rounded-lg h-28 w-28 flex justify-center items-center">
                             <AiFillGithub className="text-4xl text-black" />
-                        </span>
-                        <Link className="text-blue-500" href="https://github.com/Adufe-Obanijesu">Adufe-Obanijesu</Link>
+                        </span></Link>
+                        <Link className="text-blue-300" href="https://github.com/Adufe-Obanijesu">Adufe-Obanijesu</Link>
                     </div></Hoc>
 
-                    <Hoc><div className="flex gap-4 items-center mb-4">
-                        <span className="bg-gray-100 rounded h-28 w-28 flex justify-center items-center">
+                    <Hoc><div className="flex gap-4 lg:flex-row md:flex-col items-center mb-4">
+                    <Link className="" href="tel:+2348146917054"><span className="bg-slate-800/50 rounded-lg h-28 w-28 flex justify-center items-center">
                             <FaWhatsapp className="text-4xl text-green-500" />
-                        </span>
-                        <Link className="text-blue-500" href="tel:+2348146917054">+234 814 691 7054</Link>
+                        </span></Link>
+                        <Link className="text-blue-300" href="tel:+2348146917054">+234 814 691 7054</Link>
                     </div></Hoc>
 
                 </div>
