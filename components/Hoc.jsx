@@ -1,45 +1,43 @@
 import { motion } from "framer-motion";
 
-
 const container = {
-    hidden: {
-        opacity: 0,
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      ease: "easeOut",
+      duration: 0.8,
     },
-    visible: {
-        opacity: 1,
-        transition: {
-            ease: "easeOut",
-            duration: .8,
-        }
-    }
-}
+  },
+};
 
-const Hoc = ({children}) => {
+const Hoc = ({ children }) => {
+  // const [ isIntersecting, setIsIntersecting ] = useState(false);
 
-	// const [ isIntersecting, setIsIntersecting ] = useState(false);
+  // useEffect(() => {
 
-    // useEffect(() => {
+  //     const observer = new IntersectionObserver(([entry]) => {
+  //         setIsIntersecting(entry.isIntersecting);
+  //     });
 
-    //     const observer = new IntersectionObserver(([entry]) => {
-    //         setIsIntersecting(entry.isIntersecting);
-    //     });
+  //     observer.observe(ref.current);
 
-    //     observer.observe(ref.current);
-        
-    //     // if (isIntersecting) {
-    //     // 	observer.disconnect();
-    //     // }
+  //     // if (isIntersecting) {
+  //     // 	observer.disconnect();
+  //     // }
 
-    //     return () => observer.disconnect();
-    // }, [isIntersecting]);
+  //     return () => observer.disconnect();
+  // }, [isIntersecting]);
 
-    // const ref = useRef(null);
+  // const ref = useRef(null);
 
-	return (
-        <motion.div variants={container} initial="hidden" whileInView="visible">
-            {children}
-        </motion.div>
-	)
-}
+  return (
+    <motion.div variants={container} initial="hidden" whileInView="visible">
+      {children}
+    </motion.div>
+  );
+};
 
 export default Hoc;
