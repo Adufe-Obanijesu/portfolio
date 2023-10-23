@@ -22,7 +22,7 @@ function App() {
   const [ isTouched, setIsTouched ] = useState(false);
 
   return (
-    <main className="lg:px-20 md:pr-20 grid lg:grid-cols-4 md:grid-cols-5 gap-6 relative bg-slate-900">
+    <main className="lg:px-20 md:pr-20 grid lg:grid-cols-4 md:grid-cols-5 lg:gap-6 gap-4 relative bg-slate-900">
       <span className={`${isTouched == true ? "hidden" : "block md:hidden"} z-0 fixed left-10 top-5 animate-ping bg-gray-400 h-[10px] w-[10px] rounded-full`}></span>
       <RxHamburgerMenu className="fixed text-slate-300 md:hidden text-4xl left-4 top-4 cursor-pointer z-20" onClick={() => {
         setShowSidebar(true);

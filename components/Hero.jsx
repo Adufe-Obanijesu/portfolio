@@ -1,3 +1,4 @@
+// icons
 import { SiNextdotjs } from "react-icons/si";
 import { BiLogoTailwindCss } from "react-icons/bi";
 
