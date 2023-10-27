@@ -16,10 +16,7 @@ const Experience = () => {
 
       <Hoc>
         <p className="lg:mt-16 mt-10">
-          Over the years, I have been privileged to be exposed to different
-          fields - Engineering Firm, Social Enterprise, Agricultural Firm, Real
-          Estate Firm etc. They have given me the real-world experience I
-          needed. Listed here are a few and most impactful.
+        Throughout my career, I&apos;ve had the privilege of working with a variety of companies in different fields, including engineering, social enterprise, agriculture, and real estate. These experiences have given me the real-world experience I needed to become a well-rounded web developer. Here are some of the most impactful companies I&apos;ve worked with.
         </p>
       </Hoc>
 
@@ -36,10 +33,7 @@ const Experience = () => {
               Frontend Developer @ Kadosh Mechatronics
             </h3>
             <p className="text-base font-semibold text-slate-400">
-              An Engineering Firm with the vision of weaving mechanical,
-              electrical and computer engineering to craft cutting-edge
-              solutions. I'm saddled with the responsibility of developing an
-              accessible and interactive site using Next.js and TailwindCSS
+              I was responsible for developing an accessible and interactive website using Next.js and TailwindCSS for an engineering firm with a vision of weaving mechanical, electrical, and computer engineering to craft cutting-edge solutions.
             </p>
           </li>
         </Hoc>
@@ -55,11 +49,7 @@ const Experience = () => {
               Frontend Developer Intern @ OFNL
             </h3>
             <p className="text-base font-semibold text-slate-400">
-              An Agricultural Firm with the vision of re-engineering input
-              supply, financing and marketing extension services using web and
-              mobile applications. One of the major skills I gained was{" "}
-              <strong>Collaboration</strong> and <strong>Teamwork</strong> and I
-              was exposed to the Agile Project Management System.
+              I worked in this agricultural firm that aimed to revolutionize input supply, financing, and marketing extension services through web and mobile applications. During my tenure, I honed my skills in collaboration and teamwork while working within the <strong>Agile Project Management System</strong>.
             </p>
           </li>
         </Hoc>
@@ -75,10 +65,7 @@ const Experience = () => {
               Full Stack Developer @ WeVoteYou
             </h3>
             <p className="text-base font-semibold text-slate-400">
-              It is a platform established to find lasting solutions to Online
-              Paid Voting System, Event Ticketing, and Opinion Polls. I was
-              contracted to develop and manage a 3 in 1 web application using
-              React.js, PHP and MySQL Database.
+              I was contracted to develop and manage a 3-in-1 web application using React.js, PHP, and MySQL Database. The platform was established to provide lasting solutions to online paid voting systems, event ticketing, and opinion polls.
             </p>
           </li>
         </Hoc>

@@ -51,8 +51,7 @@ const Skills = () => {
 
       <Hoc>
         <p className="lg:mt-16 mt-10">
-          Six years is a lot of time to learn and master a lot of tools and
-          programming languages <FaTools className="inline" />, but here are my
+          Over the past six years, I&apos;ve had the opportunity to learn and master a variety of tools and programming languages <FaTools className="inline" />, but here are my
           preferences. You may find me building your next big project with
           these.
         </p>

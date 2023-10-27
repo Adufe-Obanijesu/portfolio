@@ -38,21 +38,16 @@ const About = () => {
 
       <Hoc>
         <p className="lg:mt-16 mt-10">
-          <strong>Hi there, I'm Obanijesu Adufe.</strong> It is a Yoruba name
-          but you can just call me Joshua. I was lured into web programming when
-          I was told by a friend that I could build my own calculator{" "}
-          <HiOutlineCalculator className="inline" />. Six years down the line, I
-          have been able to learn much more than just builidng a web calculator.
+          Hello, my name is <strong>Obanijesu Adufe</strong>. I&apos;m a web developer with over six years of experience in the field. I specialize in creating stunning and responsive websites that provide great user experience and fast loading times. My goal is to help businesses large or small boost their brand awareness, increase their customer base, and drive profit.
+
           <br />
-          <br />I have given it my all to thoroughly furnish my skills to ensure
-          I offer quality services in developing stunning and aesthetic looking
-          websites which are responsive across all devices, creating great user
-          experience, fast loading sites and other services based on your needs
-          and specifications.{" "}
-          <strong>
-            My goal is to help businesses large or small boost their brand
-            awareness, increase their customer base and drive profit.
-          </strong>
+          <br />
+          I have a passion for web development and have spent countless hours honing my skills to ensure that I offer quality services to my clients. I&apos;m proficient in a variety of programming languages and frameworks, including HTML, CSS, JavaScript, React, Node.js, Firebase etc.
+
+          <br />
+          <br />
+
+          If you&apos;re looking for a web developer who can help take your business to the next level, please don&apos;t hesitate to get in touch with me. I&apos;d be happy to discuss your needs and specifications and provide you with a quote.
         </p>
       </Hoc>
 

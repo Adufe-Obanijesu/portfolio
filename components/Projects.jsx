@@ -24,8 +24,7 @@ const Projects = () => {
 
       <Hoc>
         <p className="lg:mt-16 mt-10">
-          I have worked on several projects, of which I can not list all, but
-          here are some of my best.
+        I have experience working on multiple projects, some of which I have highlighted below.
         </p>
       </Hoc>
 
