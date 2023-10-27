@@ -15,11 +15,11 @@ const Projects = () => {
   return (
     <section id="work" className="py-16">
       <Hoc>
-        <p className="smallHeading">my work</p>
+        <p className="smallHeading">my projects</p>
       </Hoc>
 
       <Hoc>
-        <h3 className="heading">recent work</h3>
+        <h3 className="heading">recent projects</h3>
       </Hoc>
 
       <Hoc>
