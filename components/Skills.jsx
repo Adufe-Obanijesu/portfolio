@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import { FaCss3, FaFigma, FaHtml5, FaReact } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
-import { SiExpress, SiFirebase, SiMongodb, SiNextdotjs } from "react-icons/si";
+import { SiFirebase, SiNextdotjs } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { AiFillGithub } from "react-icons/ai";
@@ -64,8 +64,8 @@ const Skills = () => {
               <motion.div
                 variants={children}
                 whileInView="scale"
-                className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-red-400 flex justify-center items-center"
-              >
+                className="rounded-full h-24 w-24 bg-red-400 flex justify-center items-center"
+              > 
                 <FaHtml5 className="text-white text-5xl" />
               </motion.div>
             </div>
@@ -79,7 +79,7 @@ const Skills = () => {
               <motion.div
                 variants={children}
                 whileInView="scale"
-                className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-blue-400 flex justify-center items-center"
+                className="rounded-full h-24 w-24 bg-blue-400 flex justify-center items-center"
               >
                 <FaCss3 className="text-white text-5xl" />
               </motion.div>
@@ -94,7 +94,7 @@ const Skills = () => {
               <motion.div
                 variants={children}
                 whileInView="scale"
-                className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-yellow-400 flex justify-center items-center"
+                className="rounded-full h-24 w-24 bg-yellow-400 flex justify-center items-center"
               >
                 <DiJavascript1 className="text-white text-5xl" />
               </motion.div>
@@ -109,7 +109,7 @@ const Skills = () => {
               <motion.div
                 variants={children}
                 whileInView="scale"
-                className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-blue-400 flex justify-center items-center"
+                className="rounded-full h-24 w-24 bg-blue-400 flex justify-center items-center"
               >
                 <FaReact className="text-white text-5xl" />
               </motion.div>
@@ -124,7 +124,7 @@ const Skills = () => {
               <motion.div
                 variants={children}
                 whileInView="scale"
-                className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-black flex justify-center items-center"
+                className="rounded-full h-24 w-24 bg-black flex justify-center items-center"
               >
                 <SiNextdotjs className="text-white text-5xl" />
               </motion.div>
@@ -139,7 +139,7 @@ const Skills = () => {
               <motion.div
                 variants={children}
                 whileInView="scale"
-                className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-yellow-400 flex justify-center items-center"
+                className="rounded-full h-24 w-24 bg-yellow-400 flex justify-center items-center"
               >
                 <SiFirebase className="text-white text-5xl" />
               </motion.div>
@@ -154,7 +154,7 @@ const Skills = () => {
               <motion.div
                 variants={children}
                 whileInView="scale"
-                className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-red-400 flex justify-center items-center"
+                className="rounded-full h-24 w-24 bg-red-400 flex justify-center items-center"
               >
                 <FaFigma className="text-white text-5xl" />
               </motion.div>
@@ -169,7 +169,7 @@ const Skills = () => {
               <motion.div
                 variants={children}
                 whileInView="scale"
-                className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-blue-400 flex justify-center items-center"
+                className="rounded-full h-24 w-24 bg-blue-400 flex justify-center items-center"
               >
                 <BiLogoTailwindCss className="text-white text-5xl" />
               </motion.div>
@@ -184,7 +184,7 @@ const Skills = () => {
               <motion.div
                 variants={children}
                 whileInView="scale"
-                className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-orange-600 flex justify-center items-center"
+                className="rounded-full h-24 w-24 bg-orange-600 flex justify-center items-center"
               >
                 <BsGit className="text-white text-5xl" />
               </motion.div>
@@ -199,7 +199,7 @@ const Skills = () => {
               <motion.div
                 variants={children}
                 whileInView="scale"
-                className="rounded-full shadow-md shadow-slate-700 h-24 w-24 bg-black flex justify-center items-center"
+                className="rounded-full h-24 w-24 bg-black flex justify-center items-center"
               >
                 <AiFillGithub className="text-white text-5xl" />
               </motion.div>

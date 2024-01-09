@@ -3,6 +3,7 @@ import { FaEye } from "react-icons/fa";
 
 // images
 import kadosh from "../public/images/kadosh.jpg";
+import dictionary from "../public/images/dictionary.png";
 import hotel from "../public/images/hotel.jpg";
 import restaurant from "../public/images/restaurant.jpg";
 import rhm from "../public/images/rhm.jpg";
@@ -45,6 +46,28 @@ const Projects = () => {
                   <p>
                     Weaving together mechanical, electrical, and computer
                     engineering to craft cutting-edge solutions
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </Hoc>
+
+        <Hoc>
+          <a target="_blank" href="https://phenomenal-duckanoo-637e8f.netlify.app/">
+            <div className="shadow-md shadow-slate-800 h-full flex flex-col">
+              <Image
+                src={dictionary}
+                className="object-cover w-full"
+                alt="project"
+              />
+              <div className="p-4 flex flex-col justify-between grow">
+                <div>
+                  <h4 className="font-bold tracking-wide">
+                    Dictionary Web App
+                  </h4>
+                  <p>
+                    Came across a word while reading and you just don&quot;t know what it means or how it fits into the story? Well you can always look it up with this simple, yet stunning web app.
                   </p>
                 </div>
               </div>
