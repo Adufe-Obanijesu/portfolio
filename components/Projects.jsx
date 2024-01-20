@@ -8,6 +8,7 @@ import hotel from "../public/images/hotel.jpg";
 import restaurant from "../public/images/restaurant.jpg";
 import rhm from "../public/images/rhm.jpg";
 import todo from "../public/images/todo.jpg";
+import typing from "../public/images/typing.png";
 
 // animate in view component
 import Hoc from "./Hoc";
@@ -30,6 +31,28 @@ const Projects = () => {
       </Hoc>
 
       <div className="grid md:grid-cols-2 grid-cols-1 gap-8 mt-8">
+        <Hoc>
+          <a target="_blank" href="https://typing-eight-chi.vercel.app/">
+            <div className="shadow-md shadow-slate-800 h-full flex flex-col">
+              <Image
+                src={typing}
+                className="object-cover w-full"
+                alt="typing"
+              />
+              <div className="p-4 flex flex-col justify-between grow">
+                <div>
+                  <h4 className="font-bold tracking-wide">
+                    Typing Web Application (Mavis Beacon)
+                  </h4>
+                  <p>
+                    Growing up, I honed my typing skills with Mavis Beacon Desktop Application. Inspired by my childhood experiences, I've crafted my own typing application with a modern and adaptive design, ensuring a seamless and enjoyable user experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </Hoc>
+
         <Hoc>
           <a target="_blank" href="https://www.kadoshmechatronics.com">
             <div className="shadow-md shadow-slate-800 h-full flex flex-col">
@@ -77,7 +100,7 @@ const Projects = () => {
 
         <Hoc>
           <a target="_blank" href="https://cheerful-wisp-6f1261.netlify.app/">
-            <div className="shadow-md shadow-slate-800">
+            <div className="shadow-md shadow-slate-800 h-full">
               <Image
                 src={hotel}
                 className="object-cover w-full"
@@ -96,7 +119,7 @@ const Projects = () => {
 
         <Hoc>
           <a target="_blank" href="https://calm-semifreddo-77a271.netlify.app/">
-            <div className="shadow-md shadow-slate-800">
+            <div className="shadow-md shadow-slate-800 h-full">
               <Image
                 src={restaurant}
                 className="object-cover w-full"
@@ -110,12 +133,12 @@ const Projects = () => {
           </a>
         </Hoc>
 
-        <Hoc>
+        {/* <Hoc>
           <a
             target="_blank"
             href="https://loquacious-mochi-5aa671.netlify.app/"
           >
-            <div className="shadow-md shadow-slate-800">
+            <div className="shadow-md shadow-slate-800 h-full">
               <Image src={rhm} className="object-cover w-full" alt="project" />
               <div className="p-4">
                 <h4 className="font-bold tracking-wide">
@@ -125,14 +148,14 @@ const Projects = () => {
               </div>
             </div>
           </a>
-        </Hoc>
+        </Hoc> */}
 
         <Hoc>
           <a
             target="_blank"
             href="https://phenomenal-cannoli-d81bdf.netlify.app/"
           >
-            <div className="shadow-md shadow-slate-800">
+            <div className="shadow-md shadow-slate-800 h-full">
               <Image src={todo} className="object-cover w-full" alt="project" />
               <div className="p-4">
                 <h4 className="font-bold tracking-wide">Todo App</h4>
