@@ -33,7 +33,7 @@ const Experience = () => {
               Frontend Developer @ Kadosh Mechatronics
             </h3>
             <p className="text-base font-semibold text-slate-400">
-              I was responsible for developing an accessible and interactive website using Next.js and TailwindCSS for an engineering firm with a vision of weaving mechanical, electrical, and computer engineering to craft cutting-edge solutions.
+              I am a valued member of the IoT team, contributing my expertise to the development of sophisticated Web User Interfaces for innovative IoT solutions and devices. My responsibilities encompass the design and implementation of user interfaces that enhance the overall user experience, aligning seamlessly with our team's commitment to delivering cutting-edge IoT technologies.
             </p>
           </li>
         </Hoc>
