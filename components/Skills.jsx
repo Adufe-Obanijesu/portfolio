@@ -41,7 +41,7 @@ const Skills = () => {
       initial="hidden"
       animate="visible"
       id="skills"
-      className="md:py-16 py-10 relative"
+      className="lg:py-16 py-10 relative"
     >
       <Hoc>
         <p className="smallHeading">my specialty</p>
@@ -52,12 +52,12 @@ const Skills = () => {
       </Hoc>
 
       <Hoc>
-        <p className="lg:mt-16 mt-10">
+        <p className="xl:mt-16 mt-10">
           Over the past six years, I&apos;ve had the opportunity to learn and master a variety of tools and programming languages <FaTools className="inline" />. You may find me building with these.
         </p>
       </Hoc>
 
-      <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-8 mt-8">
+      <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-8 mt-8">
         <Hoc>
           <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
             <div className="flex justify-center">

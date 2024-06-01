@@ -31,7 +31,7 @@ const Sidebar = ({ show, setShow }) => {
   return (
     <AnimatePresence>
       <motion.aside
-        className={`overflow-hidden bg-slate-800 backdrop-blur-xl px-12 py-10 h-full fixed w-3/4 shadow md:shadow-none md:w-auto md:block z-20`}
+        className={`overflow-hidden bg-slate-800 backdrop-blur-xl px-12 md:px-8 lg:px-12 py-10 h-full fixed w-3/4 shadow md:shadow-none md:w-auto md:block z-20`}
         variants={sidebar}
         initial="hidden"
         animate="visible"
@@ -40,11 +40,11 @@ const Sidebar = ({ show, setShow }) => {
         <div className="flex justify-center">
           <Image
             src={profilePic}
-            className="rounded-full lg:h-48 md:h-32 lg:w-48 md:w-32 w-48 h-48 object-cover"
+            className="rounded-full xl:h-48 xl:w-48 lg:h-60 md:h-28 lg:w-60 md:w-28 w-48 h-48 object-cover"
             alt="Adufe Obanijesu"
           />
         </div>
-        <div className="mt-8">
+        <div className="mt-4">
           <h3 className="text-2xl font-bold text-center mb-2 tracking-normal">
             Obanijesu Adufe
           </h3>
@@ -53,7 +53,7 @@ const Sidebar = ({ show, setShow }) => {
           </p>
         </div>
 
-        <div className="flex flex-col items-center mt-4 font-quicksand">
+        <div className="flex flex-col items-center mt-4 lg:mt-2 font-quicksand">
           <Link className="sidebarLink" onClick={() => setShow(false)} href="#">
             Home
           </Link>

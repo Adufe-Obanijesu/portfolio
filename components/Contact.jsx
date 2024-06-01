@@ -13,7 +13,7 @@ import { BiSolidPhone } from "react-icons/bi";
 
 const Contact = () => {
   return (
-    <section id="contact" className="md:py-16 py-10">
+    <section id="contact" className="lg:py-16 py-10">
       <Hoc>
         <p className="smallHeading">get in touch</p>
       </Hoc>
@@ -23,7 +23,7 @@ const Contact = () => {
       </Hoc>
 
       <Hoc>
-        <p className="lg:mt-16 mt-10">
+        <p className="xl:mt-16 mt-10">
           Impressed with my work & skills? Want to work with me? You can reach
           out to me through the social media handles below or you can simply
           give me a call <BiSolidPhone className="inline" />.
@@ -31,9 +31,9 @@ const Contact = () => {
       </Hoc>
 
       <div className="mt-8">
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+        <div className="grid xl:grid-cols-2 grid-cols-1 gap-4">
           <Hoc>
-            <div className="flex gap-4 lg:flex-row md:flex-col items-center mb-4">
+            <div className="flex gap-4 flex-row items-center mb-4">
               <Link className="" href="mailto:obanijesuadufe8@gmail.com">
                 <span className="bg-slate-800/50 rounded-lg h-28 w-28 flex justify-center items-center">
                   <LuMail className="text-4xl text-red-500" />
@@ -49,7 +49,7 @@ const Contact = () => {
           </Hoc>
 
           <Hoc>
-            <div className="flex gap-4 lg:flex-row md:flex-col items-center mb-4">
+            <div className="flex gap-4 flex-row items-center mb-4">
               <Link
                 className=""
                 href="https://ng.linkedin.com/in/obanijesu-adufe"
@@ -68,7 +68,7 @@ const Contact = () => {
           </Hoc>
 
           <Hoc>
-            <div className="flex gap-4 lg:flex-row md:flex-col items-center mb-4">
+            <div className="flex gap-4 flex-row items-center mb-4">
               <Link className="" href="https://github.com/Adufe-Obanijesu">
                 <span className="bg-slate-800/50 rounded-lg h-28 w-28 flex justify-center items-center">
                   <AiFillGithub className="text-4xl text-black" />
@@ -84,7 +84,7 @@ const Contact = () => {
           </Hoc>
 
           <Hoc>
-            <div className="flex gap-4 lg:flex-row md:flex-col items-center mb-4">
+            <div className="flex gap-4 flex-row items-center mb-4">
               <Link className="" href="tel:+2348146917054">
                 <span className="bg-slate-800/50 rounded-lg h-28 w-28 flex justify-center items-center">
                   <FaWhatsapp className="text-4xl text-green-500" />

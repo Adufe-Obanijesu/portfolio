@@ -5,7 +5,7 @@ import Hoc from "./Hoc";
 
 const Experience = () => {
   return (
-    <section id="experience" className="md:py-16 py-10">
+    <section id="experience" className="lg:py-16 py-10">
       <Hoc>
         <p className="smallHeading">experience</p>
       </Hoc>
@@ -15,7 +15,7 @@ const Experience = () => {
       </Hoc>
 
       <Hoc>
-        <p className="lg:mt-16 mt-10">
+        <p className="xl:mt-16 mt-10">
         Throughout my career, I&apos;ve had the privilege of working with a variety of companies in different fields, including engineering, social enterprise, agriculture, and real estate. These experiences have given me the real-world experience I needed to become a well-rounded web developer. Here are some of the most impactful companies I&apos;ve worked with.
         </p>
       </Hoc>

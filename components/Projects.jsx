@@ -13,7 +13,7 @@ import Hoc from "./Hoc";
 
 const Projects = () => {
   return (
-    <section id="work" className="py-16">
+    <section id="work" className="lg:py-16 py-10">
       <Hoc>
         <p className="smallHeading">my projects</p>
       </Hoc>
@@ -23,12 +23,12 @@ const Projects = () => {
       </Hoc>
 
       <Hoc>
-        <p className="lg:mt-16 mt-10">
+        <p className="xl:mt-16 mt-10">
         I have experience working on multiple projects, some of which I have highlighted below.
         </p>
       </Hoc>
 
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-8 mt-8">
+      <div className="grid xl:grid-cols-2 grid-cols-1 gap-8 mt-8">
         <Hoc>
           <a target="_blank" href="https://typing-eight-chi.vercel.app/">
             <div className="shadow-md shadow-slate-800 h-full flex flex-col">

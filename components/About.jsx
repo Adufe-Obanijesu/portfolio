@@ -24,7 +24,7 @@ const children = {
 
 const About = () => {
   return (
-    <section id="about" className="py-16 animate_animated animate_fadeInLeft">
+    <section id="about" className="lg:py-16 py-10 animate_animated animate_fadeInLeft">
       <Hoc>
         <p className="smallHeading">about me</p>
       </Hoc>
@@ -34,7 +34,7 @@ const About = () => {
       </Hoc>
 
       <Hoc>
-        <p className="lg:mt-16 mt-10">
+        <p className="xl:mt-16 mt-10">
           I&apos;m <strong>Obanijesu Adufe</strong>, a dedicated Full Stack Software Engineer and Web3 enthusiast with a passion for crafting intuitive and visually appealing user interfaces. With over six years of experience, I specialize in building efficient web applications using React.js and Next.js.
 
           <br />
@@ -48,7 +48,7 @@ const About = () => {
         </p>
       </Hoc>
 
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-col-1 gap-4 mt-8">
+      <div className="grid xl:grid-cols-4 md:grid-cols-2 grid-col-1 gap-4 mt-8">
 
         <motion.div
           className="shadow-lg shadow-slate-800 px-6 py-12 rounded border-b-2 border-red-400 h-full"

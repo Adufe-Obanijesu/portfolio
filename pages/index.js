@@ -21,7 +21,7 @@ function App() {
   const [isTouched, setIsTouched] = useState(false);
 
   return (
-    <main className="lg:px-16 md:pr-20 grid lg:grid-cols-4 md:grid-cols-5 lg:gap-6 gap-4 relative bg-slate-900">
+    <main className="xl:px-16 md:pr-20 grid xl:grid-cols-4 md:grid-cols-5 xl:gap-6 gap-4 relative bg-slate-900">
       <span
         className={`${
           isTouched == true ? "hidden" : "block md:hidden"
@@ -46,7 +46,7 @@ function App() {
       <div className="hidden md:block">
         <Sidebar show={showSidebar} setShow={setShowSidebar} />
       </div>
-      <div className="px-6 md:px-0 col-span-3 lg:col-start-2 md:col-start-3">
+      <div className="px-6 md:px-0 col-span-3 xl:col-start-2 md:col-start-3">
         <Hero />
         <About />
         <Skills />
