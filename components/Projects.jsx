@@ -87,7 +87,7 @@ const Projects = () => {
                     Dictionary Web App
                   </h4>
                   <p>
-                  This dictionary app includes advanced functionalities such as text-to-speech and search capabilities. It is designed to make exploring and understanding words a delightful experience.
+                  This dictionary app designed to make exploring and understanding words a delightful experience.
                   </p>
                 </div>
               </div>
