@@ -1,9 +1,9 @@
 import { motion, AnimatePresence } from "framer-motion";
 
-import { TbSeo } from "react-icons/tb";
-import { FaMobile } from "react-icons/fa";
 import { GiPowerLightning } from "react-icons/gi";
-import { MdAutoAwesome } from "react-icons/md";
+import { IoGlobeOutline } from "react-icons/io5";
+import { LiaUsersSolid } from "react-icons/lia";
+import { SiSolidity } from "react-icons/si";
 
 // animate in view component
 import Hoc from "./Hoc";
@@ -22,9 +22,6 @@ const children = {
   },
 };
 
-// icons
-import { HiOutlineCalculator } from "react-icons/hi";
-
 const About = () => {
   return (
     <section id="about" className="py-16 animate_animated animate_fadeInLeft">
@@ -38,20 +35,33 @@ const About = () => {
 
       <Hoc>
         <p className="lg:mt-16 mt-10">
-          Hello, my name is <strong>Obanijesu Adufe</strong>. I&apos;m a web developer with over six years of experience in the field. I specialize in creating stunning and responsive websites that provide great user experience and fast loading times. My goal is to help businesses large or small boost their brand awareness, increase their customer base, and drive profit.
+          I&apos;m <strong>Obanijesu Adufe</strong>, a dedicated Full Stack Software Engineer and Web3 enthusiast with a passion for crafting intuitive and visually appealing user interfaces. With over six years of experience, I specialize in building efficient web applications using React.js and Next.js.
 
           <br />
           <br />
-          I have a passion for web development and have spent countless hours honing my skills to ensure that I offer quality services to my clients. I&apos;m proficient in a variety of programming languages and frameworks, including HTML, CSS, JavaScript, React, Node.js, Firebase etc.
+          Currently, I work at Kadosh Mechatronics, where I develop sophisticated Web User Interfaces for IoT solutions and create in-house software to streamline operations and boost productivity. I also mentor new developers, contributing to their growth and development.
 
           <br />
           <br />
 
-          If you&apos;re looking for a web developer who can help take your business to the next level, please don&apos;t hesitate to get in touch with me. I&apos;d be happy to discuss your needs and specifications and provide you with a quote.
+          Previously, I developed and managed a comprehensive web application for WeVoteYou, integrating online voting, event ticketing, and opinion polling systems. This role deepened my expertise in both front-end and back-end technologies.
         </p>
       </Hoc>
 
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-col-1 gap-4 mt-8">
+
+        <motion.div
+          className="shadow-lg shadow-slate-800 px-6 py-12 rounded border-b-2 border-red-400 h-full"
+          variants={children}
+          initial="hidden"
+          whileInView="visible"
+        >
+          <IoGlobeOutline className="text-red-400 text-5xl" />
+          <h4 className="font-semibold tracking-widest mt-6 font-quicksand">
+            Full Stack Development
+          </h4>
+        </motion.div>
+
         <motion.div
           className="shadow-lg shadow-slate-800 px-6 py-12 rounded border-b-2 border-blue-400 h-full"
           variants={children}
@@ -60,7 +70,7 @@ const About = () => {
         >
           <GiPowerLightning className="text-blue-400 text-5xl" />
           <h4 className="font-semibold tracking-widest mt-6 font-quicksand">
-            Fast Loading Site
+            Performance Optimization
           </h4>
         </motion.div>
 
@@ -70,21 +80,9 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
         >
-          <FaMobile className="text-red-400 text-5xl" />
+          <LiaUsersSolid className="text-yellow-400 text-5xl" />
           <h4 className="font-semibold tracking-widest mt-6 font-quicksand">
-            Mobile Friendly
-          </h4>
-        </motion.div>
-
-        <motion.div
-          className="shadow-lg shadow-slate-800 px-6 py-12 rounded border-b-2 border-yellow-400 h-full"
-          variants={children}
-          initial="hidden"
-          whileInView="visible"
-        >
-          <TbSeo className="text-yellow-400 text-5xl" />
-          <h4 className="font-semibold tracking-widest mt-6 font-quicksand">
-            SEO Optimization
+            Mentor & Team Player
           </h4>
         </motion.div>
 
@@ -94,9 +92,9 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
         >
-          <MdAutoAwesome className="text-purple-400 text-5xl" />
+          <SiSolidity className="text-purple-400 text-5xl" />
           <h4 className="font-semibold tracking-widest mt-6 font-quicksand">
-            Stunning User Interface
+            Web3 Enthusiast
           </h4>
         </motion.div>
       </div>

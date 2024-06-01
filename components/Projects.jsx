@@ -5,8 +5,6 @@ import { FaEye } from "react-icons/fa";
 import kadosh from "../public/images/kadosh.jpg";
 import dictionary from "../public/images/dictionary.png";
 import hotel from "../public/images/hotel.jpg";
-import restaurant from "../public/images/restaurant.jpg";
-import rhm from "../public/images/rhm.jpg";
 import todo from "../public/images/todo.jpg";
 import typing from "../public/images/typing.png";
 
@@ -45,7 +43,7 @@ const Projects = () => {
                     Typing Web Application (Mavis Beacon)
                   </h4>
                   <p>
-                    Growing up, I honed my typing skills with Mavis Beacon Desktop Application. Inspired by my childhood experiences, I've crafted my own typing application with a modern and adaptive design, ensuring a seamless and enjoyable user experience.
+                  Inspired by my childhood experience with Mavis Beacon, I created this web-based typing app featuring a scoreboard, progress chart, background music, and more. It’s designed to make learning to type fun and engaging, helping users improve their typing skills.
                   </p>
                 </div>
               </div>
@@ -67,8 +65,7 @@ const Projects = () => {
                     Kadosh Mechatronics
                   </h4>
                   <p>
-                    Weaving together mechanical, electrical, and computer
-                    engineering to craft cutting-edge solutions
+                  Currently in development, our website at Kadosh Mechatronics provides comprehensive insights into our company, highlighting our innovative IoT solutions. It serves as a platform to showcase our commitment, reflecting our dedication to driving meaningful progress in the industry.
                   </p>
                 </div>
               </div>
@@ -90,7 +87,7 @@ const Projects = () => {
                     Dictionary Web App
                   </h4>
                   <p>
-                    Came across a word while reading and you just don&quot;t know what it means or how it fits into the story? Well you can always look it up with this simple, yet stunning web app.
+                  This dictionary app includes advanced functionalities such as text-to-speech and search capabilities. It is designed to make exploring and understanding words a delightful experience.
                   </p>
                 </div>
               </div>
@@ -117,7 +114,7 @@ const Projects = () => {
           </a>
         </Hoc>
 
-        <Hoc>
+        {/* <Hoc>
           <a target="_blank" href="https://calm-semifreddo-77a271.netlify.app/">
             <div className="shadow-md shadow-slate-800 h-full">
               <Image
@@ -131,7 +128,7 @@ const Projects = () => {
               </div>
             </div>
           </a>
-        </Hoc>
+        </Hoc> */}
 
         {/* <Hoc>
           <a
@@ -160,8 +157,7 @@ const Projects = () => {
               <div className="p-4">
                 <h4 className="font-bold tracking-wide">Todo App</h4>
                 <p>
-                  This one is dear to my heart as it was built to organize my
-                  messy life. You can organize yours too with it.
+                A fundamental project in every developer&apos;s journey. This one is dear to my heart as it was built to organize my messy life. You can organize yours too with it.
                 </p>
               </div>
             </div>

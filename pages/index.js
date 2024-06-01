@@ -21,7 +21,7 @@ function App() {
   const [isTouched, setIsTouched] = useState(false);
 
   return (
-    <main className="lg:px-20 md:pr-20 grid lg:grid-cols-4 md:grid-cols-5 lg:gap-6 gap-4 relative bg-slate-900">
+    <main className="lg:px-16 md:pr-20 grid lg:grid-cols-4 md:grid-cols-5 lg:gap-6 gap-4 relative bg-slate-900">
       <span
         className={`${
           isTouched == true ? "hidden" : "block md:hidden"

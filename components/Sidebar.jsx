@@ -40,7 +40,7 @@ const Sidebar = ({ show, setShow }) => {
         <div className="flex justify-center">
           <Image
             src={profilePic}
-            className="rounded-full lg:h-40 md:h-32 lg:w-40 md:w-32 object-cover"
+            className="rounded-full lg:h-48 md:h-32 lg:w-48 md:w-32 w-48 h-48 object-cover"
             alt="Adufe Obanijesu"
           />
         </div>

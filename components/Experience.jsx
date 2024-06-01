@@ -33,7 +33,7 @@ const Experience = () => {
               Frontend Developer @ Kadosh Mechatronics
             </h3>
             <p className="text-base font-semibold text-slate-400">
-              I am a valued member of the IoT team, contributing my expertise to the development of sophisticated Web User Interfaces for innovative IoT solutions and devices. My responsibilities encompass the design and implementation of user interfaces that enhance the overall user experience, aligning seamlessly with our team's commitment to delivering cutting-edge IoT technologies.
+              As a Frontend Software Engineer at Kadosh Mechatronics, I develop cutting-edge IoT solutions that revolutionize user experiences and streamline operations. I design and implement web applications that interact seamlessly with IoT devices, enhancing functionality and engagement. I also develop in-house software to boost productivity and optimize workflows. Additionally, I mentor new developers, fostering a culture of collaboration and continuous learning. At Kadosh Mechatronics, we are committed to delivering innovative IoT technologies that transform industries and enhance lives.
             </p>
           </li>
         </Hoc>
@@ -49,7 +49,7 @@ const Experience = () => {
               Frontend Developer Intern @ OFNL
             </h3>
             <p className="text-base font-semibold text-slate-400">
-              I worked in this agricultural firm that aimed to revolutionize input supply, financing, and marketing extension services through web and mobile applications. During my tenure, I honed my skills in collaboration and teamwork while working within the <strong>Agile Project Management System</strong>.
+              At an Agricultural Firm dedicated to revolutionizing input supply, financing, and marketing extension services through innovative web, mobile and desktop applications, I honed my skills in collaboration and teamwork within the Agile Project Management System. This experience not only deepened my understanding of efficient project workflows but also strengthened my ability to work effectively in cross-functional teams. While there, I contributed to the development of digital solutions aimed at optimizing agricultural processes.
             </p>
           </li>
         </Hoc>
@@ -65,7 +65,9 @@ const Experience = () => {
               Full Stack Developer @ WeVoteYou
             </h3>
             <p className="text-base font-semibold text-slate-400">
-              I was contracted to develop and manage a 3-in-1 web application using React.js, PHP, and MySQL Database. The platform was established to provide lasting solutions to online paid voting systems, event ticketing, and opinion polls.
+              As a Full Stack Developer at WeVoteYou, I led the development and management of a versatile web application designed to address online voting, event ticketing, and opinion polling systems. This experience allowed me to leverage my expertise in frontend technologies such as React.js and backend technologies including PHP and MySQL.
+
+              Throughout my tenure, I focused on creating a comprehensive platform that facilitated seamless online interactions and transactions for users. From conceptualization to deployment, I embraced the challenges of full stack development, honing my skills in both frontend and backend technologies to deliver a robust and user-friendly application.
             </p>
           </li>
         </Hoc>
