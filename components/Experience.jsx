@@ -27,7 +27,7 @@ const Experience = () => {
               <FaBriefcase className="text-slate-100" />
             </div>
             <time className="mb-1 text-sm font-medium leading-none text-slate-400">
-              August 2023 - Now
+              August 2023 - June 2024
             </time>
             <h3 className="font-quicksand tracking-wider text-xl font-bold text-slate-400">
               Frontend Developer @ Kadosh Mechatronics

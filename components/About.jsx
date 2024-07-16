@@ -39,12 +39,12 @@ const About = () => {
 
           <br />
           <br />
-          Currently, I work at Kadosh Mechatronics, where I develop sophisticated Web User Interfaces for IoT solutions and create in-house software to streamline operations and boost productivity. I also mentor new developers, contributing to their growth and development.
+          Previously, I worked at Kadosh Mechatronics, where I develop sophisticated Web User Interfaces for IoT solutions and create in-house software to streamline operations and boost productivity. I also mentor new developers, contributing to their growth and development.
 
           <br />
           <br />
 
-          Previously, I developed and managed a comprehensive web application for WeVoteYou, integrating online voting, event ticketing, and opinion polling systems. This role deepened my expertise in both front-end and back-end technologies.
+          I had also developed and managed a comprehensive web application for WeVoteYou, integrating online voting, event ticketing, and opinion polling systems. This role deepened my expertise in both front-end and back-end technologies.
         </p>
       </Hoc>
 

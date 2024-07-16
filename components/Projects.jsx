@@ -7,6 +7,7 @@ import dictionary from "../public/images/dictionary.png";
 import hotel from "../public/images/hotel.jpg";
 import todo from "../public/images/todo.jpg";
 import typing from "../public/images/typing.png";
+import hng_shop from "../public/images/hng-shop.png";
 
 // animate in view component
 import Hoc from "./Hoc";
@@ -29,6 +30,28 @@ const Projects = () => {
       </Hoc>
 
       <div className="grid xl:grid-cols-2 grid-cols-1 gap-8 mt-8">
+        <Hoc>
+          <a target="_blank" href="https://main--clinquant-hotteok-5dfeb9.netlify.app/">
+            <div className="shadow-md shadow-slate-800 h-full flex flex-col">
+              <Image
+                src={hng_shop}
+                className="object-cover w-full"
+                alt="typing"
+              />
+              <div className="p-4 flex flex-col justify-between grow">
+                <div>
+                  <h4 className="font-bold tracking-wide">
+                    Online Clothing Store
+                  </h4>
+                  <p>
+                  Developed a stunning online store specializing in women&apos;s clothing. Features include product browsing, shopping cart management, checkout experience and more. Built with Next.js and Timbu API.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </Hoc>
+
         <Hoc>
           <a target="_blank" href="https://typing-eight-chi.vercel.app/">
             <div className="shadow-md shadow-slate-800 h-full flex flex-col">
