@@ -3,6 +3,7 @@ import { FaEye } from "react-icons/fa";
 
 // images
 import kadosh from "../public/images/kadosh.jpg";
+import tifi from "../public/images/tifi.png";
 import dictionary from "../public/images/dictionary.png";
 import hotel from "../public/images/hotel.jpg";
 import todo from "../public/images/todo.jpg";
@@ -30,6 +31,28 @@ const Projects = () => {
       </Hoc>
 
       <div className="grid xl:grid-cols-2 grid-cols-1 gap-8 mt-8">
+        <Hoc>
+          <a target="_blank" href="https://tifi.tv">
+            <div className="shadow-md shadow-slate-800 h-full flex flex-col">
+              <Image
+                src={tifi}
+                className="object-cover w-full"
+                alt="typing"
+              />
+              <div className="p-4 flex flex-col justify-between grow">
+                <div>
+                  <h4 className="font-bold tracking-wide">
+                    AI-Powered Platform
+                  </h4>
+                  <p>
+                  I collaborated with a diverse team at HNG to develop Tifi, an AI-powered platform that converts various content types (scripts, images, PDFs) into videos and summaries.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </Hoc>
+        
         <Hoc>
           <a target="_blank" href="https://main--clinquant-hotteok-5dfeb9.netlify.app/">
             <div className="shadow-md shadow-slate-800 h-full flex flex-col">
@@ -170,7 +193,7 @@ const Projects = () => {
           </a>
         </Hoc> */}
 
-        <Hoc>
+        {/* <Hoc>
           <a
             target="_blank"
             href="https://phenomenal-cannoli-d81bdf.netlify.app/"
@@ -185,7 +208,7 @@ const Projects = () => {
               </div>
             </div>
           </a>
-        </Hoc>
+        </Hoc> */}
       </div>
     </section>
   );

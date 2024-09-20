@@ -2,6 +2,7 @@ import { FaBriefcase } from "react-icons/fa";
 
 // animate in view component
 import Hoc from "./Hoc";
+import Link from "next/link";
 
 const Experience = () => {
   return (
@@ -21,6 +22,22 @@ const Experience = () => {
       </Hoc>
 
       <ol className="relative border-l border-slate-400 ml-4 mt-8">
+        <Hoc>
+          <li className="py-2 px-2 rounded-lg hover:bg-slate-800/50 transitionItem mb-6 ml-6">
+            <div className="absolute w-10 h-10 bg-blue-500 rounded-full mt-1.5 -left-5 border border-slate-200 flex justify-center items-center">
+              <FaBriefcase className="text-slate-100" />
+            </div>
+            <time className="mb-1 text-sm font-medium leading-none text-slate-400">
+              July 2024 - August 2024
+            </time>
+            <h3 className="font-quicksand tracking-wider text-xl font-bold text-slate-400">
+              Frontend Developer Intern @ HNG
+            </h3>
+            <p className="text-base font-semibold text-slate-400">
+            As one of the 523 finalists in the HNG Internship Program (out of 24,123 participants), I collaborated with a diverse team, including frontend developers, backend developers, UI/UX designers, data analysts, project managers, and QA testers. We worked on <Link href="https://tifi.tv" className="text-blue-500" target="_blank">Tifi</Link>, an AI-powered platform, where I contributed to key frontend development tasks. This experience provided a real-world agile environment, enhancing my ability to deliver scalable and high-quality solutions while working with cross-functional teams under tight deadlines.
+            </p>
+          </li>
+        </Hoc>
         <Hoc>
           <li className="py-2 px-2 rounded-lg hover:bg-slate-800/50 transitionItem mb-6 ml-6">
             <div className="absolute w-10 h-10 bg-blue-500 rounded-full mt-1.5 -left-5 border border-slate-200 flex justify-center items-center">

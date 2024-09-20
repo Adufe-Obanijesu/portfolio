@@ -7,6 +7,7 @@ import { SiSolidity } from "react-icons/si";
 
 // animate in view component
 import Hoc from "./Hoc";
+import Link from "next/link";
 
 const children = {
   hidden: {
@@ -44,7 +45,7 @@ const About = () => {
           <br />
           <br />
 
-          I had also developed and managed a comprehensive web application for WeVoteYou, integrating online voting, event ticketing, and opinion polling systems. This role deepened my expertise in both front-end and back-end technologies.
+          During my time at HNG, I collaborated with a multidisciplinary team on real-world projects, including <Link href="https://tifi.tv" className="text-blue-500" target="_blank">Tifi</Link>. This experience strengthened my skills in frontend development and teamwork in an agile environment.
         </p>
       </Hoc>
 
