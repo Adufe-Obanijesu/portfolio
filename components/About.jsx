@@ -36,7 +36,7 @@ const About = () => {
 
       <Hoc>
         <p className="xl:mt-16 mt-10">
-          I&apos;m <strong>Obanijesu Adufe</strong>, a dedicated Full Stack Software Engineer and Web3 enthusiast with a passion for crafting intuitive and visually appealing user interfaces. With over six years of experience, I specialize in building efficient web applications using React.js and Next.js.
+          I&apos;m <strong>Obanijesu Adufe</strong>, a dedicated Full Stack Software Engineer specializing in Frontend Development with a passion for crafting intuitive and visually appealing user interfaces. With over six years of experience, I specialize in building efficient web applications using React.js and Next.js.
 
           <br />
           <br />

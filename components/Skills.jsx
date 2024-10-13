@@ -1,9 +1,8 @@
-import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-import { FaCss3, FaFigma, FaHtml5, FaReact } from "react-icons/fa";
+import { FaCss3, FaFigma, FaHtml5, FaReact, FaSass } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
-import { SiFirebase, SiNextdotjs } from "react-icons/si";
+import { SiFirebase, SiJest, SiMysql, SiNextdotjs, SiPhp, SiRedux } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { AiFillGithub } from "react-icons/ai";
@@ -87,6 +86,21 @@ const Skills = () => {
             <p className="font-semibold text-center mt-4">CSS3</p>
           </div>
         </Hoc>
+        
+        <Hoc>
+          <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
+            <div className="flex justify-center">
+              <motion.div
+                variants={children}
+                whileInView="scale"
+                className="rounded-full h-24 w-24 bg-pink-500 flex justify-center items-center"
+              >
+                <FaSass className="text-white text-5xl" />
+              </motion.div>
+            </div>
+            <p className="font-semibold text-center mt-4">Sass</p>
+          </div>
+        </Hoc>
 
         <Hoc>
           <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
@@ -145,6 +159,36 @@ const Skills = () => {
               </motion.div>
             </div>
             <p className="font-semibold text-center mt-4">Next.js</p>
+          </div>
+        </Hoc>
+        
+        <Hoc>
+          <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
+            <div className="flex justify-center">
+              <motion.div
+                variants={children}
+                whileInView="scale"
+                className="rounded-full h-24 w-24 bg-purple-600 flex justify-center items-center"
+              >
+                <SiRedux className="text-white text-5xl" />
+              </motion.div>
+            </div>
+            <p className="font-semibold text-center mt-4">Redux</p>
+          </div>
+        </Hoc>
+        
+        <Hoc>
+          <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
+            <div className="flex justify-center">
+              <motion.div
+                variants={children}
+                whileInView="scale"
+                className="rounded-full h-24 w-24 bg-pink-600 flex justify-center items-center"
+              >
+                <SiJest className="text-white text-5xl" />
+              </motion.div>
+            </div>
+            <p className="font-semibold text-center mt-4">Jest</p>
           </div>
         </Hoc>
 
@@ -220,6 +264,36 @@ const Skills = () => {
               </motion.div>
             </div>
             <p className="font-semibold text-center mt-4">MongoDB</p>
+          </div>
+        </Hoc>
+
+        <Hoc>
+          <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
+            <div className="flex justify-center">
+              <motion.div
+                variants={children}
+                whileInView="scale"
+                className="rounded-full h-24 w-24 bg-purple-500 flex justify-center items-center"
+              >
+                <SiPhp className="text-white text-5xl" />
+              </motion.div>
+            </div>
+            <p className="font-semibold text-center mt-4">PHP</p>
+          </div>
+        </Hoc>
+
+        <Hoc>
+          <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
+            <div className="flex justify-center">
+              <motion.div
+                variants={children}
+                whileInView="scale"
+                className="rounded-full h-24 w-24 bg-blue-600 flex justify-center items-center"
+              >
+                <SiMysql className="text-white text-5xl" />
+              </motion.div>
+            </div>
+            <p className="font-semibold text-center mt-4">MySQL</p>
           </div>
         </Hoc>
 
