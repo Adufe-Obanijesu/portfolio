@@ -16,6 +16,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+        @apply bg-slate-900 max-w-[1440px] mx-auto;
+}
+
 p, li, button {
     @apply font-quicksand;
 }
