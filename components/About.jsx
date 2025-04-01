@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { GiPowerLightning } from "react-icons/gi";
 import { IoGlobeOutline } from "react-icons/io5";
@@ -7,7 +7,6 @@ import { SiSolidity } from "react-icons/si";
 
 // animate in view component
 import Hoc from "./Hoc";
-import Link from "next/link";
 
 const children = {
   hidden: {
@@ -36,16 +35,21 @@ const About = () => {
 
       <Hoc>
         <p className="xl:mt-16 mt-10">
-          I&apos;m <strong>Obanijesu Adufe</strong>, a dedicated Full Stack Software Engineer specializing in Frontend Development with a passion for crafting intuitive and visually appealing user interfaces. With over six years of experience, I specialize in building efficient web applications using React.js and Next.js.
+          I&apos;m <strong>Obanijesu Adufe</strong>, a dedicated Full Stack Software Engineer with 7+ years experience, specializing in Frontend Development with expertise in React.js, Next.js, and TypeScript
 
           <br />
           <br />
-          Previously, I worked at Kadosh Mechatronics, where I develop sophisticated Web User Interfaces for IoT solutions and create in-house software to streamline operations and boost productivity. I also mentor new developers, contributing to their growth and development.
+          At Lint Finance (Fintech Startup), I work with designers, backend developers, QA testers, and project managers to develop a financial management dashboard that helps users optimize budgets, automate payments, and manage virtual cards. Our platform currently serves over 500 active users and is growing.
 
           <br />
           <br />
 
-          During my time at HNG, I collaborated with a multidisciplinary team on real-world projects, including <Link href="https://tifi.tv" className="text-blue-500" target="_blank">Tifi</Link>. This experience strengthened my skills in frontend development and teamwork in an agile environment.
+          Previously, at Kadosh Mechatronics, I developed embedded systems and web interfaces for smart automation projects like voice-controlled home automation, a smart dust extractor, and a kitchen assistant. I also mentored junior developers, helping them build real-world applications.
+
+          <br />
+          <br />
+
+          During the HNG program, I was among 523 finalists out of 24,123 participants, contributing to TiFi, an AI-powered content transformation platform. A key achievement was migrating the entire application from client-side rendering (CSR) to server-side rendering (SSR), significantly improving performance and SEO.
         </p>
       </Hoc>
 

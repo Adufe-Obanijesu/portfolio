@@ -1,14 +1,10 @@
 import Image from "next/image";
-import { FaEye } from "react-icons/fa";
 
 // images
 import kadosh from "../public/images/kadosh.jpg";
-import tifi from "../public/images/tifi.png";
 import dictionary from "../public/images/dictionary.png";
 import hotel from "../public/images/hotel.jpg";
-import todo from "../public/images/todo.jpg";
 import typing from "../public/images/typing.png";
-import hng_shop from "../public/images/hng-shop.png";
 
 // animate in view component
 import Hoc from "./Hoc";
@@ -26,12 +22,12 @@ const Projects = () => {
 
       <Hoc>
         <p className="xl:mt-16 mt-10">
-        I have experience working on multiple projects, some of which I have highlighted below.
+        These are some of the side projects I have worked on.
         </p>
       </Hoc>
 
       <div className="grid xl:grid-cols-2 grid-cols-1 gap-8 mt-8">
-        <Hoc>
+        {/* <Hoc>
           <a target="_blank" href="https://tifi.tv">
             <div className="shadow-md shadow-slate-800 h-full flex flex-col">
               <Image
@@ -73,7 +69,7 @@ const Projects = () => {
               </div>
             </div>
           </a>
-        </Hoc>
+        </Hoc> */}
 
         <Hoc>
           <a target="_blank" href="https://typing-eight-chi.vercel.app/">

@@ -2,7 +2,6 @@ import { FaBriefcase } from "react-icons/fa";
 
 // animate in view component
 import Hoc from "./Hoc";
-import Link from "next/link";
 
 const Experience = () => {
   return (
@@ -34,7 +33,7 @@ const Experience = () => {
               Frontend Developer Intern @ HNG
             </h3>
             <p className="text-base font-semibold text-slate-400">
-            As one of the 523 finalists in the HNG Internship Program (out of 24,123 participants), I collaborated with a diverse team, including frontend developers, backend developers, UI/UX designers, data analysts, project managers, and QA testers. We worked on <Link href="https://tifi.tv" className="text-blue-500" target="_blank">Tifi</Link>, an AI-powered platform, where I contributed to key frontend development tasks. This experience provided a real-world agile environment, enhancing my ability to deliver scalable and high-quality solutions while working with cross-functional teams under tight deadlines.
+            As one of the 523 finalists in the HNG Internship Program (out of 24,123 participants), I collaborated with a diverse team, including frontend developers, backend developers, UI/UX designers, data analysts, project managers, and QA testers. We worked on a project called Tifi, an AI-powered platform, where I contributed to key frontend development tasks. This experience provided a real-world agile environment, enhancing my ability to deliver scalable and high-quality solutions while working with cross-functional teams under tight deadlines.
             </p>
           </li>
         </Hoc>
