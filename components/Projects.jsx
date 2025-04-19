@@ -5,6 +5,7 @@ import kadosh from "../public/images/kadosh.jpg";
 import dictionary from "../public/images/dictionary.png";
 import hotel from "../public/images/hotel.jpg";
 import typing from "../public/images/typing.png";
+import lint from "../public/images/lint.webp";
 
 // animate in view component
 import Hoc from "./Hoc";
@@ -22,11 +23,33 @@ const Projects = () => {
 
       <Hoc>
         <p className="xl:mt-16 mt-10">
-        These are some of the side projects I have worked on.
+          These are some of the side projects I have worked on.
         </p>
       </Hoc>
 
       <div className="grid xl:grid-cols-2 grid-cols-1 gap-8 mt-8">
+        <Hoc>
+          <a target="_blank" href="https://lint.finance">
+            <div className="shadow-md shadow-slate-800 h-full flex flex-col">
+              <Image
+                src={lint}
+                className="object-cover w-full"
+                alt="Lint finance"
+              />
+              <div className="p-4 flex flex-col justify-between grow">
+                <div>
+                  <h4 className="font-bold tracking-wide">Lint Finance</h4>
+                  <p>
+                    Rebuilt the financial dashboard with a new layout and added
+                    features for budgeting, payments, and virtual card
+                    management. Also improved the homepage performance by ~22%,
+                    making it load faster and run more smoothly.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </Hoc>
         {/* <Hoc>
           <a target="_blank" href="https://tifi.tv">
             <div className="shadow-md shadow-slate-800 h-full flex flex-col">
@@ -85,7 +108,11 @@ const Projects = () => {
                     Typing Web Application (Mavis Beacon)
                   </h4>
                   <p>
-                  Inspired by my childhood experience with Mavis Beacon, I created this web-based typing app featuring a scoreboard, progress chart, background music, and more. It’s designed to make learning to type fun and engaging, helping users improve their typing skills.
+                    Inspired by my childhood experience with Mavis Beacon, I
+                    created this web-based typing app featuring a scoreboard,
+                    progress chart, background music, and more. It&apos;s
+                    designed to make learning to type fun and engaging, helping
+                    users improve their typing skills.
                   </p>
                 </div>
               </div>
@@ -107,7 +134,11 @@ const Projects = () => {
                     Kadosh Mechatronics
                   </h4>
                   <p>
-                  Currently in development, our website at Kadosh Mechatronics provides comprehensive insights into our company, highlighting our innovative IoT solutions. It serves as a platform to showcase our commitment, reflecting our dedication to driving meaningful progress in the industry.
+                    Currently in development, our website at Kadosh Mechatronics
+                    provides comprehensive insights into our company,
+                    highlighting our innovative IoT solutions. It serves as a
+                    platform to showcase our commitment, reflecting our
+                    dedication to driving meaningful progress in the industry.
                   </p>
                 </div>
               </div>
@@ -116,7 +147,10 @@ const Projects = () => {
         </Hoc>
 
         <Hoc>
-          <a target="_blank" href="https://phenomenal-duckanoo-637e8f.netlify.app/">
+          <a
+            target="_blank"
+            href="https://phenomenal-duckanoo-637e8f.netlify.app/"
+          >
             <div className="shadow-md shadow-slate-800 h-full flex flex-col">
               <Image
                 src={dictionary}
@@ -129,7 +163,8 @@ const Projects = () => {
                     Dictionary Web App
                   </h4>
                   <p>
-                  This dictionary app designed to make exploring and understanding words a delightful experience.
+                    This dictionary app designed to make exploring and
+                    understanding words a delightful experience.
                   </p>
                 </div>
               </div>
