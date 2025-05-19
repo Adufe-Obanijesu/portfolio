@@ -4,7 +4,7 @@
 
 My very own website using Next.JS and TailwindCSS
 
-![Demo Image](https://github.com/Adufe-Obanijesu/portfolio/blob/main/public/images/thumbnail.png?raw=true)
+![Demo Image](/public/images/thumbnail.png?raw=true)
 
 ## __Live Demo__
 Click [here](https://www.obanijesuadufe.com) to view the live demo

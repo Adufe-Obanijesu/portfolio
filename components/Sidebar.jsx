@@ -31,7 +31,8 @@ const Sidebar = ({ show, setShow }) => {
   return (
     <AnimatePresence>
       <motion.aside
-        className={`overflow-hidden bg-slate-800 backdrop-blur-xl px-12 md:px-8 lg:px-12 py-10 h-full fixed w-3/4 shadow md:shadow-none md:w-auto md:block z-20`}
+      id="sidebar"
+        className={`overflow-x-hidden overflow-y-auto bg-slate-800 backdrop-blur-xl px-12 md:px-8 lg:px-8 py-10 h-full fixed w-3/4 shadow md:shadow-none md:w-auto md:block z-20`}
         variants={sidebar}
         initial="hidden"
         animate="visible"
