@@ -2,7 +2,14 @@ import { motion } from "framer-motion";
 
 import { FaCss3, FaFigma, FaHtml5, FaReact, FaSass } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
-import { SiFirebase, SiJest, SiMysql, SiNextdotjs, SiPhp, SiRedux } from "react-icons/si";
+import {
+  SiFirebase,
+  SiJest,
+  SiMysql,
+  SiNextdotjs,
+  SiPhp,
+  SiRedux,
+} from "react-icons/si";
 import { BsGit } from "react-icons/bs";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { AiFillGithub } from "react-icons/ai";
@@ -52,7 +59,9 @@ const Skills = () => {
 
       <Hoc>
         <p className="xl:mt-16 mt-10">
-          Over the past seven years, I&apos;ve had the opportunity to learn and master a variety of tools and programming languages <FaTools className="inline" />. You may find me building with these:
+          Over the past seven years, I&apos;ve had the opportunity to learn and
+          master a variety of tools and programming languages{" "}
+          <FaTools className="inline" />. You may find me building with these:
         </p>
       </Hoc>
 
@@ -64,7 +73,7 @@ const Skills = () => {
                 variants={children}
                 whileInView="scale"
                 className="rounded-full h-24 w-24 bg-red-400 flex justify-center items-center"
-              > 
+              >
                 <FaHtml5 className="text-white text-5xl" />
               </motion.div>
             </div>
@@ -86,7 +95,7 @@ const Skills = () => {
             <p className="font-semibold text-center mt-4">CSS3</p>
           </div>
         </Hoc>
-{/*         
+        {/*         
         <Hoc>
           <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
             <div className="flex justify-center">
@@ -161,7 +170,7 @@ const Skills = () => {
             <p className="font-semibold text-center mt-4">Next.js</p>
           </div>
         </Hoc>
-        
+
         <Hoc>
           <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
             <div className="flex justify-center">
@@ -176,7 +185,7 @@ const Skills = () => {
             <p className="font-semibold text-center mt-4">Redux Toolkit</p>
           </div>
         </Hoc>
-        
+
         <Hoc>
           <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
             <div className="flex justify-center">
