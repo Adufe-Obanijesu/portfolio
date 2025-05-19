@@ -52,7 +52,7 @@ const Contact = () => {
             <div className="flex gap-4 flex-row items-center mb-4">
               <Link
                 className=""
-                href="https://ng.linkedin.com/in/obanijesu-adufe"
+                href="https://linkedin.com/in/obanijesu-adufe"
               >
                 <span className="bg-slate-800/50 rounded-lg h-28 w-28 flex justify-center items-center">
                   <FaLinkedinIn className="text-4xl text-blue-600" />
@@ -60,7 +60,7 @@ const Contact = () => {
               </Link>
               <Link
                 className="text-blue-300"
-                href="https://ng.linkedin.com/in/obanijesu-adufe"
+                href="https://linkedin.com/in/obanijesu-adufe"
               >
                 obanijesu-adufe
               </Link>
