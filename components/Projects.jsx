@@ -96,7 +96,7 @@ const Projects = () => {
         </Hoc> */}
 
         <Hoc>
-          <a target="_blank" href="https://capsule_clone.netlify.app">
+          <a target="_blank" href="https://capsule-clone.netlify.app">
             <div className="shadow-md shadow-slate-800 h-full flex flex-col">
               <Image
                 src={capsule}
