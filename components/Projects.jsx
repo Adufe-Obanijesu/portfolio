@@ -6,6 +6,7 @@ import dictionary from "../public/images/dictionary.png";
 import hotel from "../public/images/hotel.jpg";
 import typing from "../public/images/typing.png";
 import lint from "../public/images/lint.webp";
+import capsule from "../public/images/capsule.webp";
 
 // animate in view component
 import Hoc from "./Hoc";
@@ -93,6 +94,28 @@ const Projects = () => {
             </div>
           </a>
         </Hoc> */}
+
+        <Hoc>
+          <a target="_blank" href="https://capsule_clone.netlify.app">
+            <div className="shadow-md shadow-slate-800 h-full flex flex-col">
+              <Image
+                src={capsule}
+                className="object-cover w-full"
+                alt="Capsules"
+              />
+              <div className="p-4 flex flex-col justify-between grow">
+                <div>
+                  <h4 className="font-bold tracking-wide">
+                    Moyra Capsule Clone (Award Winning Site)
+                  </h4>
+                  <p>
+                    A landing page clone of an award winning site Capsules by Moyra, built with React, TypeScript, GSAP, and Vite. This project showcases modern web development techniques including smooth animations, responsive design, and interactive elements.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </Hoc>
 
         <Hoc>
           <a target="_blank" href="https://typing-eight-chi.vercel.app/">
