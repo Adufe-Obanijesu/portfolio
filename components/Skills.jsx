@@ -21,6 +21,8 @@ import Hoc from "./Hoc";
 
 // icons
 import { FaTools } from "react-icons/fa";
+import Image from "next/image";
+import { IoAccessibility } from "react-icons/io5";
 
 const container = {
   visible: {
@@ -132,6 +134,35 @@ const Skills = () => {
               <motion.div
                 variants={children}
                 whileInView="scale"
+              >
+                <Image src="/images/gsap.webp" width={256} height={256} className="w-24 rounded-full" />
+              </motion.div>
+            </div>
+            <p className="font-semibold text-center mt-4">GSAP</p>
+          </div>
+        </Hoc>
+
+        <Hoc>
+          <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
+            <div className="flex justify-center">
+              <motion.div
+                variants={children}
+                whileInView="scale"
+                className="rounded-full h-24 w-24 bg-orange-400 flex justify-center items-center"
+              >
+                <IoAccessibility className="text-white text-5xl" />
+              </motion.div>
+            </div>
+            <p className="font-semibold text-center mt-4">Accessibility</p>
+          </div>
+        </Hoc>
+
+        <Hoc>
+          <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
+            <div className="flex justify-center">
+              <motion.div
+                variants={children}
+                whileInView="scale"
                 className="rounded-full h-24 w-24 bg-yellow-400 flex justify-center items-center"
               >
                 <DiJavascript1 className="text-white text-5xl" />
@@ -171,7 +202,7 @@ const Skills = () => {
           </div>
         </Hoc>
 
-        <Hoc>
+        {/* <Hoc>
           <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
             <div className="flex justify-center">
               <motion.div
@@ -184,9 +215,9 @@ const Skills = () => {
             </div>
             <p className="font-semibold text-center mt-4">Redux Toolkit</p>
           </div>
-        </Hoc>
+        </Hoc> */}
 
-        <Hoc>
+        {/* <Hoc>
           <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
             <div className="flex justify-center">
               <motion.div
@@ -199,7 +230,7 @@ const Skills = () => {
             </div>
             <p className="font-semibold text-center mt-4">Jest</p>
           </div>
-        </Hoc>
+        </Hoc> */}
 
         <Hoc>
           <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
@@ -306,7 +337,7 @@ const Skills = () => {
           </div>
         </Hoc>
 
-        <Hoc>
+        {/* <Hoc>
           <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
             <div className="flex justify-center">
               <motion.div
@@ -319,7 +350,7 @@ const Skills = () => {
             </div>
             <p className="font-semibold text-center mt-4">Solidity</p>
           </div>
-        </Hoc>
+        </Hoc> */}
 
         <Hoc>
           <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">

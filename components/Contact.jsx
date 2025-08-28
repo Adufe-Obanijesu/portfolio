@@ -85,12 +85,12 @@ const Contact = () => {
 
           <Hoc>
             <div className="flex gap-4 flex-row items-center mb-4">
-              <Link className="" href="tel:+2348146917054">
+              <Link className="" href="https://wa.me/2348146917054">
                 <span className="bg-slate-800/50 rounded-lg h-28 w-28 flex justify-center items-center">
                   <FaWhatsapp className="text-4xl text-green-500" />
                 </span>
               </Link>
-              <Link className="text-blue-300" href="tel:+2348146917054">
+              <Link className="text-blue-300" href="https://wa.me/2348146917054">
                 +234 814 691 7054
               </Link>
             </div>

@@ -50,7 +50,7 @@ const Sidebar = ({ show, setShow }) => {
             Obanijesu Adufe
           </h3>
           <p className="text-sm text-slate-300 text-center">
-            Full Stack Web Developer
+            Creative Frontend Developer
           </p>
         </div>
 

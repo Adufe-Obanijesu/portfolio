@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 // images
-import kadosh from "../public/images/kadosh.jpg";
-import dictionary from "../public/images/dictionary.png";
-import hotel from "../public/images/hotel.jpg";
-import typing from "../public/images/typing.png";
+import kadosh from "../public/images/kadosh.webp";
+// import dictionary from "../public/images/dictionary.png";
+// import hotel from "../public/images/hotel.jpg";
+import typing from "../public/images/typing.webp";
 import lint from "../public/images/lint.webp";
 import capsule from "../public/images/capsule.webp";
 
@@ -169,7 +169,7 @@ const Projects = () => {
           </a>
         </Hoc>
 
-        <Hoc>
+        {/* <Hoc>
           <a
             target="_blank"
             href="https://phenomenal-duckanoo-637e8f.netlify.app/"
@@ -193,9 +193,9 @@ const Projects = () => {
               </div>
             </div>
           </a>
-        </Hoc>
+        </Hoc> */}
 
-        <Hoc>
+        {/* <Hoc>
           <a target="_blank" href="https://cheerful-wisp-6f1261.netlify.app/">
             <div className="shadow-md shadow-slate-800 h-full">
               <Image
@@ -212,7 +212,7 @@ const Projects = () => {
               </div>
             </div>
           </a>
-        </Hoc>
+        </Hoc> */}
 
         {/* <Hoc>
           <a target="_blank" href="https://calm-semifreddo-77a271.netlify.app/">

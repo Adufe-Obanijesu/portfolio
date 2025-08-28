@@ -2,6 +2,7 @@ import { FaBriefcase } from "react-icons/fa";
 
 // animate in view component
 import Hoc from "./Hoc";
+import { IoCalendarSharp } from "react-icons/io5";
 
 const Experience = () => {
   return (
@@ -29,10 +30,26 @@ const Experience = () => {
         <Hoc>
           <li className="py-2 px-2 rounded-lg hover:bg-slate-800/50 transitionItem mb-6 ml-6">
             <div className="absolute w-10 h-10 bg-blue-500 rounded-full mt-1.5 -left-5 border border-slate-200 flex justify-center items-center">
+              <IoCalendarSharp className="text-slate-100" />
+            </div>
+            <time className="mb-1 text-sm font-medium leading-none text-slate-400">
+              June 2025 - Present
+            </time>
+            <h3 className="font-quicksand tracking-wider text-xl font-bold text-slate-400">
+              Professional development (Career Break)
+            </h3>
+            <p className="text-base font-semibold text-slate-400">
+              Taking time to expand my web development skills through intensive study of GSAP animation library, performance optimization techniques, and accessibility best practices for motion design.
+            </p>
+          </li>
+        </Hoc>
+        <Hoc>
+          <li className="py-2 px-2 rounded-lg hover:bg-slate-800/50 transitionItem mb-6 ml-6">
+            <div className="absolute w-10 h-10 bg-blue-500 rounded-full mt-1.5 -left-5 border border-slate-200 flex justify-center items-center">
               <FaBriefcase className="text-slate-100" />
             </div>
             <time className="mb-1 text-sm font-medium leading-none text-slate-400">
-              November 2024 - Present
+              November 2024 - May 2025
             </time>
             <h3 className="font-quicksand tracking-wider text-xl font-bold text-slate-400">
               Associate Frontend Developer

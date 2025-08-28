@@ -64,7 +64,7 @@ h6 {
 }
 
 .sidebarLink {
-  @apply lg:my-3 my-2 cursor-pointer uppercase text-xs tracking-widest text-slate-400 hover:text-blue-400 border-b border-slate-800 hover:border-blue-400 py-1;
+  @apply lg:my-2 my-2 cursor-pointer uppercase text-xs tracking-widest text-slate-400 hover:text-blue-400 border-b border-slate-800 hover:border-blue-400 py-1;
 }
 
 /*.active {
