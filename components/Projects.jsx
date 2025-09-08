@@ -7,6 +7,7 @@ import kadosh from "../public/images/kadosh.webp";
 import typing from "../public/images/typing.webp";
 import lint from "../public/images/lint.webp";
 import capsule from "../public/images/capsule.webp";
+import jitter from "../public/images/jitter.webp";
 
 // animate in view component
 import Hoc from "./Hoc";
@@ -109,7 +110,29 @@ const Projects = () => {
                     Moyra Capsule Clone (Award Winning Site)
                   </h4>
                   <p>
-                    A landing page clone of an award winning site Capsules by Moyra, built with React, TypeScript, GSAP, and Vite. This project showcases modern web development techniques including smooth animations, responsive design, and interactive elements.
+                    A landing page clone of an award winning site Capsules by Moyra, built with React, TypeScript, TailwindCSS, GSAP, and Vite. This project showcases modern web development techniques including smooth animations, responsive design, and interactive elements.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </Hoc>
+
+        <Hoc>
+          <a target="_blank" href="https://jitter-clone-sigma.vercel.app/">
+            <div className="shadow-md shadow-slate-800 h-full flex flex-col">
+              <Image
+                src={jitter}
+                className="object-cover w-full"
+                alt="Jitter"
+              />
+              <div className="p-4 flex flex-col justify-between grow">
+                <div>
+                  <h4 className="font-bold tracking-wide">
+                    Jitter Clone (Award Winning Site)
+                  </h4>
+                  <p>
+                    A landing page clone of an award winning site Jitter, built with Next.js, TypeScript,TailwindCSS, and GSAP. This project showcases modern web development techniques including smooth animations, responsive design, and interactive elements.
                   </p>
                 </div>
               </div>
