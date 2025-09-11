@@ -22,23 +22,22 @@ const Projects = () => {
       </Hoc>
 
       <div className="grid xl:grid-cols-2 grid-cols-1 gap-8 mt-8">
-  {projects.map(({ link, img, alt, title, description }, i) => (
-    <Hoc key={i}>
-      <a target="_blank" href={link}>
-        <div className="shadow-md shadow-slate-800 h-full flex flex-col">
-          <Image src={img} className="object-cover w-full" alt={alt} />
-          <div className="p-4 flex flex-col justify-between grow">
-            <div>
-              <h4 className="font-bold tracking-wide">{title}</h4>
-              <p>{description}</p>
-            </div>
-          </div>
-        </div>
-      </a>
-    </Hoc>
-  ))}
-</div>
-
+        {projects.map(({ link, img, alt, title, description }, i) => (
+          <Hoc key={i}>
+            <a target="_blank" href={link}>
+              <div className="shadow-md shadow-slate-800 h-full flex flex-col">
+                <Image src={img} className="object-cover w-full" alt={alt} />
+                <div className="p-4 flex flex-col justify-between grow">
+                  <div>
+                    <h4 className="font-bold tracking-wide">{title}</h4>
+                    <p>{description}</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </Hoc>
+        ))}
+      </div>
     </section>
   );
 };

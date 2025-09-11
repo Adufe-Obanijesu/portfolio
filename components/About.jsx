@@ -39,40 +39,51 @@ const About = () => {
 
       <Hoc>
         <p className="xl:mt-16 mt-10">
-          I&apos;m <strong>Obanijesu Adufe</strong>, a frontend developer with 7+ years&apos; experience, specializing in building engaging interfaces and bringing websites to life with web animations (GSAP, React, Next.js, TypeScript), backed by full-stack expertise.
+          I&apos;m <strong>Obanijesu Adufe</strong>, a frontend developer with
+          7+ years&apos; experience, specializing in building engaging
+          interfaces and bringing websites to life with web animations (GSAP,
+          React, Next.js, TypeScript), backed by full-stack expertise.
         </p>
 
-          <br />
-        
+        <br />
+
         <p>
-          Recently, I&apos;ve dedicated time to mastering web animations with GSAP, learning how to improve performance in animation-heavy sites, and studying accessibility practices to ensure websites remain usable alongside motion.
+          Recently, I&apos;ve dedicated time to mastering web animations with
+          GSAP, learning how to improve performance in animation-heavy sites,
+          and studying accessibility practices to ensure websites remain usable
+          alongside motion.
         </p>
 
-          <br />
+        <br />
 
         <p>
-          From developing web dashboards for IoT systems at Kadosh Mechatronics, to building the frontend of an AI-powered content transformation platform at HNG in collaboration with designers, QA testers, backend developers, etc., to developing a fintech web application at Lint Finance, my journey has also led me to delve into web animation—bringing interfaces to life.
+          From developing web dashboards for IoT systems at Kadosh Mechatronics,
+          to building the frontend of an AI-powered content transformation
+          platform at HNG in collaboration with designers, QA testers, backend
+          developers, etc., to developing a fintech web application at Lint
+          Finance, my journey has also led me to delve into web
+          animation—bringing interfaces to life.
         </p>
       </Hoc>
 
       <div className="grid xl:grid-cols-4 md:grid-cols-2 grid-col-1 gap-4 mt-8">
-        {
-          about_skills.map((skill, index) => (
-            <motion.div
-              key={index}
-              className={cn("shadow-lg shadow-slate-800 px-6 py-12 rounded border-b-2 h-full", skill.border_color)}
-              variants={children}
-              initial="hidden"
-              whileInView="visible"
-            >
-              <skill.icon className={cn("text-5xl", skill.text_color)} />
-              <h4 className="font-semibold tracking-widest mt-6 font-quicksand">
-                {skill.title}
-              </h4>
-            </motion.div>
-          ))
-        }
-
+        {about_skills.map((skill, index) => (
+          <motion.div
+            key={index}
+            className={cn(
+              "shadow-lg shadow-slate-800 px-6 py-12 rounded border-b-2 h-full",
+              skill.border_color,
+            )}
+            variants={children}
+            initial="hidden"
+            whileInView="visible"
+          >
+            <skill.icon className={cn("text-5xl", skill.text_color)} />
+            <h4 className="font-semibold tracking-widest mt-6 font-quicksand">
+              {skill.title}
+            </h4>
+          </motion.div>
+        ))}
       </div>
     </section>
   );

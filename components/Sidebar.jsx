@@ -56,18 +56,16 @@ const Sidebar = ({ show, setShow }) => {
         </div>
 
         <div className="flex flex-col items-center mt-4 lg:mt-2 font-quicksand">
-          
-          {
-            links.map((link) => (
-    <Link
-      key={link.href}
-      className="sidebarLink"
-      onClick={() => setShow(false)}
-      href={link.href}
-    >
-      {link.label}
-    </Link>
-  ))}
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              className="sidebarLink"
+              onClick={() => setShow(false)}
+              href={link.href}
+            >
+              {link.label}
+            </Link>
+          ))}
         </div>
       </motion.aside>
     </AnimatePresence>

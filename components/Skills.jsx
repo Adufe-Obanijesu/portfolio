@@ -53,21 +53,26 @@ const Skills = () => {
 
       <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-8 mt-8">
         {skills.map((skill, idx) => (
-    <Hoc key={idx}>
-      <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
-        <div className="flex justify-center">
-          <motion.div
-            variants={children}
-            whileInView="scale"
-            className={cn(`flex justify-center items-center ${!skill.image ? skill.bg : ""}`, {"rounded-full h-24 w-24": !skill.image})}
-          >
-            {skill.icon}
-          </motion.div>
-        </div>
-        <p className="font-semibold text-center mt-4">{skill.label}</p>
-      </div>
-    </Hoc>
-  ))}
+          <Hoc key={idx}>
+            <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
+              <div className="flex justify-center">
+                <motion.div
+                  variants={children}
+                  whileInView="scale"
+                  className={cn(
+                    `flex justify-center items-center ${
+                      !skill.image ? skill.bg : ""
+                    }`,
+                    { "rounded-full h-24 w-24": !skill.image },
+                  )}
+                >
+                  {skill.icon}
+                </motion.div>
+              </div>
+              <p className="font-semibold text-center mt-4">{skill.label}</p>
+            </div>
+          </Hoc>
+        ))}
       </div>
     </motion.section>
   );
