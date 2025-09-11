@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 // image
 import profilePic from "../public/images/pixs.jpg";
+import { links } from "../data/links";
 
 const sidebar = {
   hidden: {
@@ -55,44 +56,18 @@ const Sidebar = ({ show, setShow }) => {
         </div>
 
         <div className="flex flex-col items-center mt-4 lg:mt-2 font-quicksand">
-          <Link className="sidebarLink" onClick={() => setShow(false)} href="#">
-            Home
-          </Link>
-          <Link
-            className="sidebarLink"
-            onClick={() => setShow(false)}
-            href="#about"
-          >
-            about
-          </Link>
-          <Link
-            className="sidebarLink"
-            onClick={() => setShow(false)}
-            href="#skills"
-          >
-            skills
-          </Link>
-          <Link
-            className="sidebarLink"
-            onClick={() => setShow(false)}
-            href="#experience"
-          >
-            experience
-          </Link>
-          <Link
-            className="sidebarLink"
-            onClick={() => setShow(false)}
-            href="#work"
-          >
-            work
-          </Link>
-          <Link
-            className="sidebarLink"
-            onClick={() => setShow(false)}
-            href="#contact"
-          >
-            contact
-          </Link>
+          
+          {
+            links.map((link) => (
+    <Link
+      key={link.href}
+      className="sidebarLink"
+      onClick={() => setShow(false)}
+      href={link.href}
+    >
+      {link.label}
+    </Link>
+  ))}
         </div>
       </motion.aside>
     </AnimatePresence>

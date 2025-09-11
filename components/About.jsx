@@ -6,6 +6,8 @@ import { LiaUsersSolid } from "react-icons/lia";
 
 // animate in view component
 import Hoc from "./Hoc";
+import { about_skills } from "../data/about";
+import { cn } from "../utils/tailwind";
 
 const children = {
   hidden: {
@@ -54,53 +56,22 @@ const About = () => {
       </Hoc>
 
       <div className="grid xl:grid-cols-4 md:grid-cols-2 grid-col-1 gap-4 mt-8">
-        <motion.div
-          className="shadow-lg shadow-slate-800 px-6 py-12 rounded border-b-2 border-red-400 h-full"
-          variants={children}
-          initial="hidden"
-          whileInView="visible"
-        >
-          <IoGlobeOutline className="text-red-400 text-5xl" />
-          <h4 className="font-semibold tracking-widest mt-6 font-quicksand">
-            Full Stack Development
-          </h4>
-        </motion.div>
-
-        <motion.div
-          className="shadow-lg shadow-slate-800 px-6 pt-12 pb-6 rounded border-b-2 border-purple-400"
-          variants={children}
-          initial="hidden"
-          whileInView="visible"
-        >
-          <IoSparkles className="text-purple-400 text-5xl" />
-          <h4 className="font-semibold tracking-widest mt-6 font-quicksand">
-            Web Animations
-          </h4>
-        </motion.div>
-
-        <motion.div
-          className="shadow-lg shadow-slate-800 px-6 py-12 rounded border-b-2 border-blue-400 h-full"
-          variants={children}
-          initial="hidden"
-          whileInView="visible"
-        >
-          <GiPowerLightning className="text-blue-400 text-5xl" />
-          <h4 className="font-semibold tracking-widest mt-6 font-quicksand">
-            Performance Optimization
-          </h4>
-        </motion.div>
-
-        <motion.div
-          className="shadow-lg shadow-slate-800 px-6 py-12 rounded border-b-2 border-yellow-400 h-full"
-          variants={children}
-          initial="hidden"
-          whileInView="visible"
-        >
-          <LiaUsersSolid className="text-yellow-400 text-5xl" />
-          <h4 className="font-semibold tracking-widest mt-6 font-quicksand">
-            Mentor & Team Player
-          </h4>
-        </motion.div>
+        {
+          about_skills.map((skill, index) => (
+            <motion.div
+              key={index}
+              className={cn("shadow-lg shadow-slate-800 px-6 py-12 rounded border-b-2 h-full", skill.border_color)}
+              variants={children}
+              initial="hidden"
+              whileInView="visible"
+            >
+              <skill.icon className={cn("text-5xl", skill.text_color)} />
+              <h4 className="font-semibold tracking-widest mt-6 font-quicksand">
+                {skill.title}
+              </h4>
+            </motion.div>
+          ))
+        }
 
       </div>
     </section>
