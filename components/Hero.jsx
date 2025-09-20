@@ -11,9 +11,9 @@ const Hero = () => {
       <div className="z-0">
         <Hoc>
           <h1 className="font-extrabold lg:text-5xl md:text-4xl text-2xl tracking-[0.15em]">
-            I am a Creative
+            I am a
             <br />
-            Frontend Developer
+            Frontend Engineer
           </h1>
         </Hoc>
 

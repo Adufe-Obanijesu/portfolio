@@ -24,7 +24,7 @@ const Contact = () => {
       </Hoc>
 
       <Hoc>
-        <p className="xl:mt-16 mt-10">
+        <p className="xl:mt-12 mt-10">
           Impressed with my work & skills? Want to work with me? You can reach
           out to me through the social media handles below or you can simply
           give me a call <BiSolidPhone className="inline" />.

@@ -6,7 +6,7 @@ import { projects } from "../data/projects";
 
 const Projects = () => {
   return (
-    <section id="work" className="lg:py-16 py-10">
+    <section id="projects" className="lg:py-16 py-10">
       <Hoc>
         <p className="smallHeading">my projects</p>
       </Hoc>
@@ -16,7 +16,7 @@ const Projects = () => {
       </Hoc>
 
       <Hoc>
-        <p className="xl:mt-16 mt-10">
+        <p className="xl:mt-12 mt-10">
           These are some of the side projects I have worked on.
         </p>
       </Hoc>

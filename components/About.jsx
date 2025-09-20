@@ -38,31 +38,14 @@ const About = () => {
       </Hoc>
 
       <Hoc>
-        <p className="xl:mt-16 mt-10">
-          I&apos;m <strong>Obanijesu Adufe</strong>, a frontend developer with
-          7+ years&apos; experience, specializing in building engaging
-          interfaces and bringing websites to life with web animations (GSAP,
-          React, Next.js, TypeScript), backed by full-stack expertise.
+        <p className="xl:mt-12 mt-10">
+          Curiosity birthed my career in tech back in 2017 as a Mechanical Engineering freshman. One question changed the course of my life: <span className="text-slate-300 bg-slate-700 py-1 px-1 rounded-md">&quot;Do you know you could build your own calculator?&quot;</span> That single question lit the spark — and I dove headfirst into programming, exploring frontend, backend, and even UI/UX before finding where I truly belong: frontend development, where I can build things people can see, interact with, and enjoy.
         </p>
 
         <br />
 
         <p>
-          Recently, I&apos;ve dedicated time to mastering web animations with
-          GSAP, learning how to improve performance in animation-heavy sites,
-          and studying accessibility practices to ensure websites remain usable
-          alongside motion.
-        </p>
-
-        <br />
-
-        <p>
-          From developing web dashboards for IoT systems at Kadosh Mechatronics,
-          to building the frontend of an AI-powered content transformation
-          platform at HNG in collaboration with designers, QA testers, backend
-          developers, etc., to developing a fintech web application at Lint
-          Finance, my journey has also led me to delve into web
-          animation—bringing interfaces to life.
+          Since then, I&apos;ve contributed to projects across a fintech startup, a mechatronics lab, an agricultural firm, and media, each experience deepening my skills and shaping the way I create web experiences.
         </p>
       </Hoc>
 

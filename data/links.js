@@ -3,6 +3,6 @@ export const links = [
   { href: "#about", label: "about" },
   { href: "#skills", label: "skills" },
   { href: "#experience", label: "experience" },
-  { href: "#work", label: "work" },
+  { href: "#projects", label: "projects" },
   { href: "#contact", label: "contact" },
 ];

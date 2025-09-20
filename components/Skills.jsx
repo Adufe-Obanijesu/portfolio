@@ -44,8 +44,8 @@ const Skills = () => {
       </Hoc>
 
       <Hoc>
-        <p className="xl:mt-16 mt-10">
-          Over the past seven years, I&apos;ve had the opportunity to learn and
+        <p className="xl:mt-12 mt-10">
+          Over the past eight years, I&apos;ve had the opportunity to learn and
           master a variety of tools and programming languages{" "}
           <FaTools className="inline" />. You may find me building with these:
         </p>

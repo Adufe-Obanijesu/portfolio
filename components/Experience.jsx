@@ -1,5 +1,3 @@
-import { FaBriefcase } from "react-icons/fa";
-
 // animate in view component
 import Hoc from "./Hoc";
 import { IoCalendarSharp } from "react-icons/io5";
@@ -17,10 +15,10 @@ const Experience = () => {
       </Hoc>
 
       <Hoc>
-        <p className="xl:mt-16 mt-10">
+        <p className="xl:mt-12 mt-10">
           Throughout my career, I&apos;ve had the privilege of working with a
-          variety of companies in different fields, including engineering,
-          social enterprise, agriculture, and real estate. These experiences
+          variety of companies in different fields, including fintech, mechatronics lab,
+          media, and agriculture. These experiences
           have given me the real-world experience I needed to become a
           well-rounded web developer. Here are some of the most impactful
           companies I&apos;ve worked with.
@@ -40,9 +38,9 @@ const Experience = () => {
               <h3 className="font-quicksand tracking-wider text-xl font-bold text-slate-400">
                 {title}
               </h3>
-              <p className="text-base font-semibold text-slate-400">
+              <div className="text-base font-semibold text-slate-400">
                 {description}
-              </p>
+              </div>
             </li>
           </Hoc>
         ))}

@@ -1,4 +1,4 @@
-import kadosh from "../public/images/kadosh.webp";
+// import kadosh from "../public/images/kadosh.webp";
 import typing from "../public/images/typing.webp";
 import lint from "../public/images/lint.webp";
 import capsule from "../public/images/capsule.webp";
@@ -37,12 +37,12 @@ export const projects = [
     description:
       "Inspired by my childhood experience with Mavis Beacon, I created this web-based typing app featuring a scoreboard, progress chart, background music, and more. It&apos;s designed to make learning to type fun and engaging, helping users improve their typing skills.",
   },
-  {
-    link: "https://www.kadoshmechatronics.com",
-    img: kadosh,
-    alt: "project",
-    title: "Kadosh Mechatronics",
-    description:
-      "Currently in development, our website at Kadosh Mechatronics provides comprehensive insights into our company, highlighting our innovative IoT solutions. It serves as a platform to showcase our commitment, reflecting our dedication to driving meaningful progress in the industry.",
-  },
+  // {
+  //   link: "https://www.kadoshmechatronics.com",
+  //   img: kadosh,
+  //   alt: "project",
+  //   title: "Kadosh Mechatronics",
+  //   description:
+  //     "Currently in development, our website at Kadosh Mechatronics provides comprehensive insights into our company, highlighting our innovative IoT solutions. It serves as a platform to showcase our commitment, reflecting our dedication to driving meaningful progress in the industry.",
+  // },
 ];
