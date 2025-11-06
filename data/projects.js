@@ -14,7 +14,7 @@ export const projects = [
       "Rebuilt the financial dashboard with a new layout and added features for budgeting, payments, and virtual card management. Also improved the homepage performance by ~22%, making it load faster and run more smoothly.",
   },
   {
-    link: "https://capsule-clone.netlify.app",
+    link: "/projects/capsule",
     img: capsule,
     alt: "Capsules",
     title: "Moyra Capsule Clone (Award Winning Site)",
@@ -22,7 +22,7 @@ export const projects = [
       "A landing page clone of an award winning site Capsules by Moyra, built with React, TypeScript, TailwindCSS, GSAP, and Vite. This project showcases modern web development techniques including smooth animations, responsive design, and interactive elements.",
   },
   {
-    link: "https://jitter-clone-sigma.vercel.app/",
+    link: "/projects/jitter",
     img: jitter,
     alt: "Jitter",
     title: "Jitter Clone (Award Winning Site)",
@@ -30,7 +30,7 @@ export const projects = [
       "A landing page clone of an award winning site Jitter, built with Next.js, TypeScript,TailwindCSS, and GSAP. This project showcases modern web development techniques including smooth animations, responsive design, and interactive elements.",
   },
   {
-    link: "https://typing-eight-chi.vercel.app/",
+    link: "/projects/typing-app",
     img: typing,
     alt: "typing",
     title: "Typing Web Application (Mavis Beacon)",
