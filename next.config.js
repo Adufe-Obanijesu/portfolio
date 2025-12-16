@@ -16,6 +16,11 @@ module.exports = {
         destination: "https://typing-eight-chi.vercel.app/",
         permanent: false,
       },
+      {
+        source: "/projects/mojito",
+        destination: "https://mojito-concept.netlify.app/",
+        permanent: false,
+      },
     ];
   },
 };
