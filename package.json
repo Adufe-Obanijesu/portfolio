@@ -8,10 +8,10 @@
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^10.16.4",
-    "next": "latest",
+    "next": "^16.0.10",
     "prettier": "^3.0.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "react-icons": "^4.11.0",
     "sharp": "^0.32.6",
     "tailwind-merge": "^3.3.1"
