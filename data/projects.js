@@ -3,6 +3,8 @@ import typing from "../public/images/typing.webp";
 import lint from "../public/images/lint.webp";
 import capsule from "../public/images/capsule.webp";
 import jitter from "../public/images/jitter.webp";
+import mojito from "../public/images/mojito.jpeg";
+import outpost from "../public/images/outpost.jpeg";
 
 export const projects = [
   {
@@ -19,7 +21,7 @@ export const projects = [
     alt: "Capsules",
     title: "Moyra Capsule Clone (Award Winning Site)",
     description:
-      "A landing page clone of an award winning site Capsules by Moyra, built with React, TypeScript, TailwindCSS, GSAP, and Vite. This project showcases modern web development techniques including smooth animations, responsive design, and interactive elements.",
+      "A landing page clone of an award winning site Capsules by Moyra, built with React, Vite, TypeScript, TailwindCSS, GSAP, and Vite. This project showcases modern web development techniques including smooth animations, responsive design, and interactive elements.",
   },
   {
     link: "/projects/jitter",
@@ -28,6 +30,22 @@ export const projects = [
     title: "Jitter Clone (Award Winning Site)",
     description:
       "A landing page clone of an award winning site Jitter, built with Next.js, TypeScript,TailwindCSS, and GSAP. This project showcases modern web development techniques including smooth animations, responsive design, and interactive elements.",
+  },
+  {
+    link: "/projects/mojito",
+    img: mojito,
+    alt: "Mojito",
+    title: "Mojito",
+    description:
+        "A landing page for cocktail, built with React, Vite, TypeScript,TailwindCSS, and GSAP. This project showcases modern web development techniques including smooth animations, responsive design, and interactive elements.",
+  },
+  {
+    link: "/projects/outpost",
+    img: outpost,
+    alt: "Outpost",
+    title: "Outpost Clone",
+    description:
+        "A landing page clone of Outpost, built with React, Vite, TypeScript,TailwindCSS, and GSAP. This project showcases modern web development techniques including smooth animations, responsive design, and interactive elements.",
   },
   {
     link: "/projects/typing-app",

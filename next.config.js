@@ -3,7 +3,7 @@ module.exports = {
     return [
       {
         source: "/projects/capsule",
-        destination: "https://capsuleconcept.netlify.app",
+        destination: "https://capsule-clone.netlify.app/",
         permanent: false,
       },
       {
@@ -19,6 +19,11 @@ module.exports = {
       {
         source: "/projects/mojito",
         destination: "https://mojito-concept.netlify.app/",
+        permanent: false,
+      },
+      {
+        source: "/projects/outpost",
+        destination: "https://outpost-clone.netlify.app/",
         permanent: false,
       },
     ];
