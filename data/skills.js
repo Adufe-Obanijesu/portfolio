@@ -67,6 +67,7 @@ export const skillCategories = [
             alt="GSAP"
             width={24}
             height={24}
+            unoptimized
             className="w-6 h-6 rounded-sm object-cover shrink-0"
           />
         ),
@@ -79,6 +80,7 @@ export const skillCategories = [
             alt="Zustand"
             width={24}
             height={24}
+            unoptimized
             className="w-6 h-6 rounded-sm object-cover shrink-0"
           />
         ),
