@@ -13,46 +13,51 @@ import Projects from "../components/Projects";
 // import Certifications from "../components/Certifications";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import { ImageModalProvider } from "../components/ImageModal";
 
 function App() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [isTouched, setIsTouched] = useState(false);
 
   return (
-    <main className="xl:px-10 md:pr-20 grid xl:grid-cols-4 md:grid-cols-5 xl:gap-6 gap-4 relative">
-      <span
-        className={`${isTouched == true ? "hidden" : "block md:hidden"
-          } z-0 fixed left-10 top-5 animate-ping bg-gray-400 h-[10px] w-[10px] rounded-full`}
-      ></span>
-      <RxHamburgerMenu
-        className="fixed text-slate-300 md:hidden text-4xl left-4 top-4 cursor-pointer z-20"
-        onClick={() => {
-          setShowSidebar(true);
-          setIsTouched(true);
-        }}
-      />
-      <div
-        className={`h-screen w-screen bg-black opacity-40 blur-lg fixed z-10 ${showSidebar ? "block" : "hidden"
-          }`}
-        onClick={() => setShowSidebar(false)}
-      ></div>
-      <div className="md:hidden">
-        {showSidebar && <Sidebar show={showSidebar} setShow={setShowSidebar} />}
-      </div>
-      <div className="hidden md:block">
-        <Sidebar show={showSidebar} setShow={setShowSidebar} />
-      </div>
-      <div className="px-6 md:px-0 col-span-3 xl:col-start-2 md:col-start-3">
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        {/* <Certifications /> */}
-        <Contact />
-        <Footer />
-      </div>
-    </main>
+    <ImageModalProvider>
+      <main className="xl:px-10 md:pr-20 grid xl:grid-cols-4 md:grid-cols-5 xl:gap-6 gap-4 relative">
+        <span
+          className={`${isTouched == true ? "hidden" : "block md:hidden"
+            } z-0 fixed left-10 top-5 animate-ping bg-gray-400 h-[10px] w-[10px] rounded-full`}
+        ></span>
+        <RxHamburgerMenu
+          className="fixed text-slate-300 md:hidden text-4xl left-4 top-4 cursor-pointer z-20"
+          onClick={() => {
+            setShowSidebar(true);
+            setIsTouched(true);
+          }}
+        />
+        <div
+          className={`h-screen w-screen bg-black opacity-40 blur-lg fixed z-10 ${showSidebar ? "block" : "hidden"
+            }`}
+          onClick={() => setShowSidebar(false)}
+        ></div>
+        <div className="md:hidden">
+          {showSidebar && (
+            <Sidebar show={showSidebar} setShow={setShowSidebar} />
+          )}
+        </div>
+        <div className="hidden md:block">
+          <Sidebar show={showSidebar} setShow={setShowSidebar} />
+        </div>
+        <div className="px-6 md:px-0 col-span-3 xl:col-start-2 md:col-start-3 min-w-0 w-full">
+          <Hero />
+          <About />
+          <Skills />
+          <Experience />
+          <Projects />
+          {/* <Certifications /> */}
+          <Contact />
+          <Footer />
+        </div>
+      </main>
+    </ImageModalProvider>
   );
 }
 

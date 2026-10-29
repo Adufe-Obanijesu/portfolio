@@ -4,8 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FiDownload } from "react-icons/fi";
 
 // image
-import profilePic from "../public/images/profile.webp";
+import profilePic from "../public/images/pixs.jpg";
 import { links } from "../data/links";
+import { useImageModal } from "./ImageModal";
 
 const sidebar = {
   hidden: {
@@ -30,6 +31,8 @@ const sidebar = {
 };
 
 const Sidebar = ({ show, setShow }) => {
+  const { openImage } = useImageModal();
+
   return (
     <AnimatePresence>
       <motion.aside
@@ -41,11 +44,24 @@ const Sidebar = ({ show, setShow }) => {
         exit="exit"
       >
         <div className="flex justify-center">
-          <Image
-            src={profilePic}
-            className="rounded-full xl:h-44 xl:w-44 lg:h-52 md:h-28 lg:w-52 md:w-28 w-40 h-40 object-cover border-2 border-slate-700"
-            alt="Adufe Obanijesu"
-          />
+          <button
+            type="button"
+            onClick={() =>
+              openImage({
+                src: profilePic,
+                alt: "Obanijesu Adufe",
+                caption: "Obanijesu Adufe — Frontend Developer",
+              })
+            }
+            className="rounded-full overflow-hidden border-2 border-slate-700 hover:border-blue-400 transition-colors cursor-pointer"
+            title="Click to view full photo"
+          >
+            <Image
+              src={profilePic}
+              className="xl:h-44 xl:w-44 lg:h-52 md:h-28 lg:w-52 md:w-28 w-40 h-40 object-cover block"
+              alt="Adufe Obanijesu"
+            />
+          </button>
         </div>
         <div className="mt-5">
           <h3 className="text-xl font-bold text-center text-white tracking-wide">

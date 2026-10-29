@@ -14,27 +14,13 @@ const container = {
 };
 
 const Hoc = ({ children }) => {
-  // const [ isIntersecting, setIsIntersecting ] = useState(false);
-
-  // useEffect(() => {
-
-  //     const observer = new IntersectionObserver(([entry]) => {
-  //         setIsIntersecting(entry.isIntersecting);
-  //     });
-
-  //     observer.observe(ref.current);
-
-  //     // if (isIntersecting) {
-  //     // 	observer.disconnect();
-  //     // }
-
-  //     return () => observer.disconnect();
-  // }, [isIntersecting]);
-
-  // const ref = useRef(null);
-
   return (
-    <motion.div variants={container} initial="hidden" whileInView="visible">
+    <motion.div
+      variants={container}
+      initial="hidden"
+      whileInView="visible"
+      className="min-w-0 max-w-full"
+    >
       {children}
     </motion.div>
   );
