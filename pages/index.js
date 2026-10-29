@@ -3,9 +3,6 @@
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-// css
-// import "../styles/globals.css";
-
 // components
 import Sidebar from "../components/Sidebar";
 import Hero from "../components/Hero";
@@ -13,6 +10,7 @@ import About from "../components/About";
 import Skills from "../components/Skills";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
+// import Certifications from "../components/Certifications";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
@@ -23,9 +21,8 @@ function App() {
   return (
     <main className="xl:px-10 md:pr-20 grid xl:grid-cols-4 md:grid-cols-5 xl:gap-6 gap-4 relative">
       <span
-        className={`${
-          isTouched == true ? "hidden" : "block md:hidden"
-        } z-0 fixed left-10 top-5 animate-ping bg-gray-400 h-[10px] w-[10px] rounded-full`}
+        className={`${isTouched == true ? "hidden" : "block md:hidden"
+          } z-0 fixed left-10 top-5 animate-ping bg-gray-400 h-[10px] w-[10px] rounded-full`}
       ></span>
       <RxHamburgerMenu
         className="fixed text-slate-300 md:hidden text-4xl left-4 top-4 cursor-pointer z-20"
@@ -35,9 +32,8 @@ function App() {
         }}
       />
       <div
-        className={`h-screen w-screen bg-black opacity-40 blur-lg fixed z-10 ${
-          showSidebar ? "block" : "hidden"
-        }`}
+        className={`h-screen w-screen bg-black opacity-40 blur-lg fixed z-10 ${showSidebar ? "block" : "hidden"
+          }`}
         onClick={() => setShowSidebar(false)}
       ></div>
       <div className="md:hidden">
@@ -52,6 +48,7 @@ function App() {
         <Skills />
         <Experience />
         <Projects />
+        {/* <Certifications /> */}
         <Contact />
         <Footer />
       </div>

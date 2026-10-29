@@ -2,25 +2,53 @@ import { FaBriefcase } from "react-icons/fa";
 
 export const experiences = [
   {
-    date: "November 2024 - May 2025",
-    title: "Associate Frontend Developer",
+    date: "January 2026 – July 2026",
+    title: "Web Development Team Lead (Volunteer) @ TEDxOsogbo",
+    location: "Osogbo, Nigeria",
     description: (
       <>
-        A fintech startup that helps people optimize budgets, save for expenses,
-        and automate payments. I worked as the sole frontend developer at Lint
-        Finance, where I redesigned the existing dashboard and extended it with
-        new features. This included implementing the virtual card system where
-        users could generate and manage their cards, building out the complete
-        user onboarding experience with multi-step forms and validation, and
-        developing the payroll and wallet management interfaces that handle
-        financial transactions and account data.
+        Led development of the official TEDxOsogbo 2026 website (
+        <a
+          href="https://tedxosogbo.com.ng"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 underline hover:text-blue-300"
+        >
+          tedxosogbo.com.ng
+        </a>
+        ) using Next.js and TypeScript. Coordinated the engineering effort and
+        integrated third-party ticketing platforms (Xara AI and Tixvnt) to
+        handle smooth ticket sales and payments for approximately 200 event
+        participants.
+      </>
+    ),
+    icon: FaBriefcase,
+    images: [
+      {
+        name: "TEDxOsogbo",
+        src: "/images/tedx.webp",
+        link: "https://tedxosogbo.com.ng",
+        width: 1566,
+        height: 789,
+      },
+    ],
+  },
+  {
+    date: "November 2024 – May 2025",
+    title: "Associate Frontend Developer @ Lint Universal Technologies",
+    location: "Plateau State, Nigeria",
+    description: (
+      <>
+        Rebuilt the customer dashboard with Next.js and TypeScript as the sole
+        frontend developer, delivering virtual card creation, multi-step
+        onboarding with validation, wallet management, payroll processing, and
+        bill payments.
         <div style={{ marginTop: "12px" }}>
-          I focused on improving the app's performance and search visibility,
-          and set up our technical documentation system with Docusaurus so the
-          team could easily reference how everything worked. I collaborated
-          directly with product managers, backend engineers, QA testers,
-          designers, and the mobile team to make sure features worked smoothly
-          across all platforms.
+          Set up a Docusaurus documentation site that gave the team a single
+          reference for system architecture and implementation details. Worked
+          day to day with product managers, designers, backend engineers, QA
+          testers, and the mobile team to take features smoothly from design to
+          production release.
         </div>
       </>
     ),
@@ -36,19 +64,19 @@ export const experiences = [
     ],
   },
   {
-    date: "July 2024 - August 2024",
-    title: "Frontend Developer Intern @ HNG",
+    date: "July 2024 – August 2024",
+    title: "Frontend Developer Intern @ HNG Tech",
+    location: "Lagos, Nigeria",
     description: (
       <>
-        The HNG internship is a fast-paced bootcamp where thousands compete on
-        real-world projects. I contributed to an open-source boilerplate and
-        worked on the dashboard of an AI-powered tool called Tifi.
+        Finished among the top 523 of 24,123 participants in HNG Internship 11
+        (finalist certificate). Contributed to Tifi, a live AI-powered platform
+        built with Next.js and TypeScript that turns scripts into videos, images
+        into videos and talking avatars, and summarizes PDFs and podcasts.
         <div style={{ marginTop: "12px" }}>
-          One highlight was leading the transition of Tifi from client-side to
-          server-side rendering, significantly improving SEO and performance.
-          Out of 24,123 participants, I finished among the 523 finalists—an
-          experience that demanded focus, resilience under pressure, and the
-          ability to deliver under tight schedules.
+          Led the shift of most of the application from client-side to
+          server-side rendering, significantly improving SEO and performance,
+          and contributed key interfaces to the admin dashboard.
         </div>
       </>
     ),
@@ -70,20 +98,22 @@ export const experiences = [
     ],
   },
   {
-    date: "August 2023 - June 2024",
-    title: "Frontend Developer @ Kadosh Mechatronics",
+    date: "August 2023 – June 2024",
+    title:
+      "Embedded Engineer & Web Developer (NYSC Placement) @ Kadosh Mechatronics",
+    location: "Ondo State, Nigeria",
     description: (
       <>
-        At this early-stage startup focused on Embedded Systems, Robotics, and
-        STEM education, I wore many hats. I programmed robots and built web
-        interfaces to interact with them for clients—often solving problems we
-        hadn’t seen before. I also developed a private, custom-built web-based
-        inventory system that tracked tools and usage, which improved team
-        productivity.
+        Developed Arduino and ESP8266/NodeMCU firmware for embedded projects
+        including home automation, a smart dust extractor, a massager, and a
+        fire and gas detection system, interfacing sensors, relays, and
+        actuators.
         <div style={{ marginTop: "12px" }}>
-          Beyond coding, I taught web development and embedded systems, while
-          mentoring and coordinating interns and new engineers. This gave me
-          hands-on leadership experience and the chance to help others grow.
+          Built web interfaces served directly from the ESP8266 for remote
+          monitoring and control of connected devices. Also developed an in-house
+          inventory management system with React and Firebase for tracking
+          components across projects, and taught web development and embedded
+          systems while mentoring junior engineers.
         </div>
       </>
     ),
@@ -99,19 +129,15 @@ export const experiences = [
     ],
   },
   {
-    date: "March 2023 - August 2023",
-    title: "Frontend Developer Intern @ OFNL",
+    date: "March 2023 – September 2023",
+    title: "Frontend Developer Intern @ Oluadepe Farms Nigeria Limited (OFNL)",
+    location: "Nigeria",
     description: (
       <>
-        At an agricultural tech firm improving input supply, financing, and
-        marketing services, I worked on developing a desktop application using
-        React and Electron that helped farmers manage their crop planning, track
-        inventory, and coordinate with suppliers.
-        <div style={{ marginTop: "12px" }}>
-          This was my first experience working on a team, and I learned not just
-          coding practices but also how to assist teammates and help them
-          grow—an early lesson in collaboration and empathy.
-        </div>
+        Contributed to a desktop application using React and Electron supporting
+        farmers with crop planning, inventory tracking, and supplier
+        coordination. Developed the farmer registration module and pond
+        management features.
       </>
     ),
     icon: FaBriefcase,
@@ -125,10 +151,18 @@ export const experiences = [
     ],
   },
   {
-    date: "June 2021 - September 2021",
-    title: "Full Stack Developer @ NaijaSpirit Multimedia",
-    description:
-      "I developed a web application that handled online voting, event ticketing, and opinion polling. The platform processed payments through Paystack and Flutterwave APIs, and included an admin dashboard where organizers could track event sales, vote counts, and revenue analytics. The platform supported several events and handled over 23,000 user visits with thousands of votes processed.",
+    date: "June 2021 – September 2021",
+    title: "Full Stack Web Developer @ Naijaspirit Multimedia",
+    location: "Osun State, Nigeria",
+    description: (
+      <>
+        Built a React and PHP/MySQL web application for online voting, event
+        ticketing, and opinion polling that handled over 23,000 user visits
+        across multiple events. Integrated Paystack and Flutterwave payment
+        gateways to process votes and ticket purchases, and developed an admin
+        dashboard for organizers to track sales, vote counts, and revenue.
+      </>
+    ),
     icon: FaBriefcase,
   },
 ];

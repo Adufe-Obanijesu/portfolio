@@ -1,7 +1,9 @@
 const Footer = () => {
   return (
-    <footer className="bg-slate-800 py-2">
-      <p className="text-slate-400 text-center">Frontend Engineer</p>
+    <footer className="border-t border-slate-800 py-6 mt-6">
+      <p className="text-xs uppercase tracking-[0.2em] text-slate-400 text-center font-semibold">
+        Obanijesu Adufe · Frontend Developer
+      </p>
     </footer>
   );
 };

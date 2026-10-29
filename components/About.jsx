@@ -1,9 +1,5 @@
 import { motion } from "framer-motion";
 
-import { GiPowerLightning } from "react-icons/gi";
-import { IoGlobeOutline, IoSparkles } from "react-icons/io5";
-import { LiaUsersSolid } from "react-icons/lia";
-
 // animate in view component
 import Hoc from "./Hoc";
 import { about_skills } from "../data/about";
@@ -11,60 +7,70 @@ import { cn } from "../utils/tailwind";
 
 const children = {
   hidden: {
-    x: "-100px",
+    x: "-40px",
     opacity: 0,
   },
   visible: {
     x: 0,
     opacity: 1,
     transition: {
-      ease: "easeInOut",
+      ease: "easeOut",
+      duration: 0.3,
     },
   },
 };
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="lg:py-16 py-10 animate_animated animate_fadeInLeft"
-    >
+    <section id="about" className="lg:py-16 py-10 border-b border-slate-800">
       <Hoc>
         <p className="smallHeading">about me</p>
       </Hoc>
 
       <Hoc>
-        <h3 className="heading">who am i?</h3>
+        <h2 className="heading">who am i?</h2>
       </Hoc>
 
       <Hoc>
-        <p className="xl:mt-12 mt-10">
-          Curiosity birthed my career in tech back in 2017 as a Mechanical Engineering freshman. One question changed the course of my life: <span className="text-slate-300 bg-slate-700 py-1 px-1 rounded-md">&quot;Do you know you could build your own calculator?&quot;</span> That single question lit the spark — and I dove headfirst into programming, exploring frontend, backend, and even UI/UX before finding where I truly belong: frontend development, where I can build things people can see, interact with, and enjoy.
+        <p className="mt-8">
+          Curiosity birthed my career in tech back in 2017 as a Mechanical
+          Engineering freshman. One question changed the course of my life:{" "}
+          <span className="text-white bg-slate-800 border border-slate-700 py-0.5 px-2 rounded font-medium">
+            &quot;Do you know you could build your own calculator?&quot;
+          </span>{" "}
+          That single question lit the spark — and I dove headfirst into
+          programming, exploring frontend, backend, and UI/UX before finding
+          where I truly belong: frontend development, where I build things
+          people can see, interact with, and enjoy.
         </p>
 
-        <br />
-
-        <p>
-          Since then, I&apos;ve contributed to projects across a fintech startup, a mechatronics lab, an agricultural firm, and media, each experience deepening my skills and shaping the way I create web experiences.
+        <p className="mt-4">
+          I&apos;ve been coding since 2017 and building professionally since
+          2021, delivering web experiences across fintech, embedded systems,
+          educational platforms, and agri-tech. Strong in React, Next.js,
+          TypeScript, and GSAP animation, I have built complex interfaces
+          like financial dashboards and interactive learning applications, while
+          staying comfortable on the backend whenever a project calls for it.
         </p>
       </Hoc>
 
-      <div className="grid xl:grid-cols-4 md:grid-cols-2 grid-col-1 gap-4 mt-8">
+      <div className="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 mt-8">
         {about_skills.map((skill, index) => (
           <motion.div
             key={index}
             className={cn(
-              "shadow-lg shadow-slate-800 px-6 py-12 rounded border-b-2 h-full",
+              "bg-slate-800 border border-slate-700 border-b-4 px-6 py-8 rounded h-full",
               skill.border_color,
             )}
             variants={children}
             initial="hidden"
             whileInView="visible"
+            viewport={{ once: true }}
           >
-            <skill.icon className={cn("text-5xl", skill.text_color)} />
-            <h4 className="font-semibold tracking-widest mt-6 font-quicksand">
+            <skill.icon className={cn("text-4xl", skill.text_color)} />
+            <h3 className="font-bold text-sm uppercase tracking-wider text-white mt-5">
               {skill.title}
-            </h4>
+            </h3>
           </motion.div>
         ))}
       </div>

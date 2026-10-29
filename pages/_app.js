@@ -5,34 +5,34 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Obanijesu Adufe</title>
+        <title>Obanijesu Adufe | Frontend Developer</title>
         <meta
           name="description"
-          content="Obanijesu Adufe is a software engineer who builds stunning and aesthetic websites to help businesses large or small boost their brand awareness, increase their customer base and drive profit"
+          content="Obanijesu Adufe is a Frontend Developer specializing in React, Next.js, TypeScript, and GSAP animation, with experience building across fintech, embedded systems, and educational platforms."
         />
-        <meta name="image" content="https://obanijesuadufe.com/og.png" />
-        <meta property="og:title" content="Obanijesu Adufe" />
+        <meta name="image" content="https://obanijesu.netlify.app/og.png" />
+        <meta property="og:title" content="Obanijesu Adufe | Frontend Developer" />
         <meta
           property="og:description"
-          content="Obanijesu Adufe is a software engineer who builds stunning and aesthetic websites to help businesses large or small boost their brand awareness, increase their customer base and drive profit"
+          content="Frontend Developer specializing in React, Next.js, TypeScript, and GSAP animation, with experience across fintech, embedded systems, and educational platforms."
         />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="Obanijesu Adufe" />
-        <meta property="og:url" content="https://obanijesuadufe.com" />
-        <meta property="og:image" content="https://obanijesuadufe.com/og.png" />
-        <meta property="twitter:title" content="Obanijesu Adufe" />
+        <meta property="og:url" content="https://obanijesu.netlify.app" />
+        <meta property="og:image" content="https://obanijesu.netlify.app/og.png" />
+        <meta property="twitter:title" content="Obanijesu Adufe | Frontend Developer" />
         <meta
           property="twitter:description"
-          content="Building stunning and aesthetic websites to help businesses large or small boost their brand awareness, increase their customer base and drive profit"
+          content="Frontend Developer specializing in React, Next.js, TypeScript, and GSAP animation."
         />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:creator" content="@AdufeObanijesu" />
         <meta property="twitter:site" content="@AdufeObanijesu" />
-        <meta property="twitter:url" content="https://obanijesuadufe.com" />
+        <meta property="twitter:url" content="https://obanijesu.netlify.app" />
         <meta
           property="twitter:image"
-          content="https://obanijesuadufe.com/og.png"
+          content="https://obanijesu.netlify.app/og.png"
         />
         <link
           rel="apple-touch-icon"

@@ -1,66 +1,90 @@
-// import kadosh from "../public/images/kadosh.webp";
 import typing from "../public/images/typing.webp";
-import lint from "../public/images/lint.webp";
 import capsule from "../public/images/capsule.webp";
 import jitter from "../public/images/jitter.webp";
-import mojito from "../public/images/mojito.jpeg";
 import outpost from "../public/images/outpost.jpeg";
 
-export const projects = [
+export const coreProjects = [
   {
-    link: "https://lint.finance",
-    img: lint,
-    alt: "Lint finance",
-    title: "Lint Finance",
-    description:
-      "Rebuilt the financial dashboard with a new layout and added features for budgeting, payments, and virtual card management. Also improved the homepage performance by ~22%, making it load faster and run more smoothly.",
+    id: "oasis",
+    title: "Oasis",
+    role: "Lead Developer & Curriculum Designer",
+    status: "Launching November 2026",
+    timeline: "July 2026 – Present",
+    // video: "/videos/oasis-demo.mp4",
+    // poster: "/images/oasis-player.png",
+    headline:
+      "A next-generation learning platform built to help students truly understand why concepts work, starting with first-year students at Osun State University.",
+    highlights: [
+      "Built a student-facing mobile/PWA app and an admin workspace for creating, previewing, organizing, and publishing modular lessons.",
+      "Developed an interactive lesson player with graded activities, mathematical content rendering, diagrams, and learner progress tracking.",
+      "Implemented a graph-based visual lesson editor with validation, undo/redo, draft recovery, live student preview, and version history.",
+      "Engineered a multi-package architecture sharing curriculum, editor, and lesson-player packages across mobile, admin, and a TypeScript API backed by Firebase, Firestore, and Cloudflare Workers.",
+    ],
+    tech: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Ionic",
+      "Capacitor",
+      "Firebase",
+      "Firestore",
+      "Cloudflare Workers",
+    ],
+    badge: "Core Platform",
+    isHeroic: true,
   },
   {
-    link: "/projects/capsule",
-    img: capsule,
-    alt: "Capsules",
-    title: "Moyra Capsule Clone (Award Winning Site)",
-    description:
-      "A landing page clone of an award winning site Capsules by Moyra, built with React, Vite, TypeScript, TailwindCSS, GSAP, and Vite. This project showcases modern web development techniques including smooth animations, responsive design, and interactive elements.",
-  },
-  {
-    link: "/projects/jitter",
-    img: jitter,
-    alt: "Jitter",
-    title: "Jitter Clone (Award Winning Site)",
-    description:
-      "A landing page clone of an award winning site Jitter, built with Next.js, TypeScript,TailwindCSS, and GSAP. This project showcases modern web development techniques including smooth animations, responsive design, and interactive elements.",
-  },
-  {
-    link: "/projects/mojito",
-    img: mojito,
-    alt: "Mojito",
-    title: "Mojito",
-    description:
-        "A landing page for cocktail, built with React, Vite, TypeScript,TailwindCSS, and GSAP. This project showcases modern web development techniques including smooth animations, responsive design, and interactive elements.",
-  },
-  {
-    link: "/projects/outpost",
-    img: outpost,
-    alt: "Outpost",
-    title: "Outpost Clone",
-    description:
-        "A landing page clone of Outpost, built with React, Vite, TypeScript,TailwindCSS, and GSAP. This project showcases modern web development techniques including smooth animations, responsive design, and interactive elements.",
-  },
-  {
-    link: "/projects/typing-app",
+    id: "typing-app",
+    title: "Mavis Beacon Typing Application",
+    role: "Full Stack Developer",
+    timeline: "2023",
     img: typing,
-    alt: "typing",
-    title: "Typing Web Application (Mavis Beacon)",
-    description:
-      "Inspired by my childhood experience with Mavis Beacon, I created this web-based typing app featuring a scoreboard, progress chart, background music, and more. It&apos;s designed to make learning to type fun and engaging, helping users improve their typing skills.",
+    alt: "Mavis Beacon Typing App",
+    headline:
+      "A full-stack, gamified typing platform inspired by childhood memories of Mavis Beacon, designed to make mastering keyboard speed engaging and measurable.",
+    highlights: [
+      "User authentication and personal profiles with persistent score tracking and historical progress charts.",
+      "Real-time WPM calculation, accuracy metrics, error highlighting, and customizable practice drills.",
+      "Interactive global scoreboard, achievements, and customizable background audio for focus sessions.",
+    ],
+    tech: ["React", "Express.js", "MongoDB", "Node.js", "TailwindCSS"],
+    badge: "Full-Stack Web App",
+    isHeroic: true,
   },
-  // {
-  //   link: "https://www.kadoshmechatronics.com",
-  //   img: kadosh,
-  //   alt: "project",
-  //   title: "Kadosh Mechatronics",
-  //   description:
-  //     "Currently in development, our website at Kadosh Mechatronics provides comprehensive insights into our company, highlighting our innovative IoT solutions. It serves as a platform to showcase our commitment, reflecting our dedication to driving meaningful progress in the industry.",
-  // },
+];
+
+export const creativeProjects = [
+  {
+    title: "Capsules by Moyra",
+    type: "Site Recreation",
+    originalUrl: "https://capsules.moyra.co",
+    originalLabel: "capsules.moyra.co",
+    description:
+      "A high-fidelity recreation of the award-winning Capsules landing page by Moyra, focused on smooth GSAP scroll choreography, perspective transitions, and sleek interactive motion.",
+    tech: ["React", "Vite", "TypeScript", "TailwindCSS", "GSAP"],
+    img: capsule,
+    alt: "Capsules by Moyra Recreation",
+  },
+  {
+    title: "Jitter Video",
+    type: "Site Recreation",
+    originalUrl: "https://jitter.video",
+    originalLabel: "jitter.video",
+    description:
+      "An interactive recreation of the award-winning Jitter.video website, engineered with high-performance animations, choreographed timelines, and responsive layout fidelity.",
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "GSAP"],
+    img: jitter,
+    alt: "Jitter Video Recreation",
+  },
+  {
+    title: "Outpost Design",
+    type: "Site Recreation",
+    originalUrl: "https://outpost.design",
+    originalLabel: "outpost.design",
+    description:
+      "A landing page recreation of Outpost, built with modern web animation techniques, clean typographic hierarchy, and responsive interaction design.",
+    tech: ["React", "Vite", "TypeScript", "TailwindCSS", "GSAP"],
+    img: outpost,
+    alt: "Outpost Design Recreation",
+  },
 ];

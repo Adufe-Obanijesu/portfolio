@@ -1,80 +1,51 @@
-import { motion } from "framer-motion";
-
-// animate in view component
 import Hoc from "./Hoc";
-
-// icons
-import { FaTools } from "react-icons/fa";
-import { skills } from "../data/skills";
-import { cn } from "../utils/tailwind";
-
-const container = {
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.3,
-    },
-  },
-  hidden: {
-    opacity: 0.9,
-  },
-};
-
-const children = {
-  scale: {
-    scale: [1, 1.1, 1],
-  },
-};
+import { skillCategories } from "../data/skills";
 
 const Skills = () => {
   return (
-    <motion.section
-      variants={container}
-      initial="hidden"
-      animate="visible"
-      id="skills"
-      className="lg:py-16 py-10 relative"
-    >
+    <section id="skills" className="lg:py-16 py-10 border-b border-slate-800">
       <Hoc>
         <p className="smallHeading">my specialty</p>
       </Hoc>
 
       <Hoc>
-        <h3 className="heading">my skills</h3>
+        <h2 className="heading">technical skills</h2>
       </Hoc>
 
       <Hoc>
-        <p className="xl:mt-12 mt-10">
-          Over the past eight years, I&apos;ve had the opportunity to learn and
-          master a variety of tools and programming languages{" "}
-          <FaTools className="inline" />. You may find me building with these:
+        <p className="mt-8">
+          Coding since 2017 and building professionally since 2021, I work with
+          the following stack across frontend engineering, backend services, and
+          embedded hardware:
         </p>
       </Hoc>
 
-      <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-8 mt-8">
-        {skills.map((skill, idx) => (
-          <Hoc key={idx}>
-            <div className="hover:bg-slate-800/50 bg-slate-900 shadow-transparent hover:shadow-blue-400 rounded transition duration-900 ease-in py-4 hover:shadow-sm">
-              <div className="flex justify-center">
-                <motion.div
-                  variants={children}
-                  whileInView="scale"
-                  className={cn(
-                    `flex justify-center items-center ${
-                      !skill.image ? skill.bg : ""
-                    }`,
-                    { "rounded-full h-24 w-24": !skill.image },
-                  )}
-                >
-                  {skill.icon}
-                </motion.div>
+      <div className="mt-8 space-y-7">
+        {skillCategories.map((category, catIdx) => (
+          <Hoc key={catIdx}>
+            <div>
+              <h3 className="text-xs font-bold uppercase tracking-[0.25em] text-slate-400 mb-3">
+                {category.name}
+              </h3>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+                {category.skills.map((skill, idx) => (
+                  <div
+                    key={idx}
+                    className="flex items-center gap-3 px-3.5 py-3 rounded bg-slate-800 border border-slate-700 hover:border-blue-400 transition-colors duration-150"
+                  >
+                    {skill.icon}
+                    <span className="font-semibold text-xs sm:text-sm text-slate-200 truncate">
+                      {skill.label}
+                    </span>
+                  </div>
+                ))}
               </div>
-              <p className="font-semibold text-center mt-4">{skill.label}</p>
             </div>
           </Hoc>
         ))}
       </div>
-    </motion.section>
+    </section>
   );
 };
 
