@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import Image from "next/image";
 import Hoc from "./Hoc";
+import SmartImage from "./SmartImage";
 import { coreProjects, creativeProjects } from "../data/projects";
 import {
   FiExternalLink,
@@ -20,7 +20,7 @@ const MockupStrip = ({ mockups, onSelect }) => {
   };
 
   return (
-    <div className="relative bg-[#0d0d0d] border-b border-slate-700 w-full max-w-full min-w-0 overflow-hidden">
+    <div className="relative bg-slate-900 border-b border-slate-700 w-full max-w-full min-w-0 overflow-hidden">
       {/* Top utility bar for the mockup strip */}
       <div className="flex items-center justify-between px-6 pt-4 pb-1">
         <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400">
@@ -65,8 +65,11 @@ const MockupStrip = ({ mockups, onSelect }) => {
                   {/* Speaker notch */}
                   <div className="w-8 h-1 bg-slate-800 rounded-full mx-auto mb-1.5" />
                   {/* Phone Screen */}
-                  <div className="relative rounded-[12px] overflow-hidden bg-black aspect-[456/1024]">
-                    <Image
+                  <div
+                    className="relative rounded-[12px] overflow-hidden bg-slate-900"
+                    style={{ aspectRatio: `${item.width} / ${item.height}` }}
+                  >
+                    <SmartImage
                       src={item.src}
                       alt={item.caption}
                       width={item.width}
@@ -82,9 +85,6 @@ const MockupStrip = ({ mockups, onSelect }) => {
                   {/* Bottom bar */}
                   <div className="w-10 h-1 bg-slate-800 rounded-full mx-auto mt-1.5" />
                 </div>
-                {/* <span className="text-[11px] font-medium text-slate-400 group-hover:text-slate-200 mt-2.5">
-                  {item.caption.replace("Oasis ", "")}
-                </span> */}
               </div>
             );
           }
@@ -102,8 +102,11 @@ const MockupStrip = ({ mockups, onSelect }) => {
                   {/* Webcam dot */}
                   <div className="w-1.5 h-1.5 rounded-full bg-slate-800 mx-auto mb-1.5" />
                   {/* Laptop Screen */}
-                  <div className="relative rounded-sm overflow-hidden bg-black border border-slate-800 aspect-[1024/527]">
-                    <Image
+                  <div
+                    className="relative rounded-sm overflow-hidden bg-slate-900 border border-slate-800"
+                    style={{ aspectRatio: `${item.width} / ${item.height}` }}
+                  >
+                    <SmartImage
                       src={item.src}
                       alt={item.caption}
                       width={item.width}
@@ -252,12 +255,14 @@ const Projects = () => {
                             src: project.img,
                             alt: project.alt || project.title,
                             caption: project.title,
+                            width: project.img.width,
+                            height: project.img.height,
                           })
                         }
                         className="relative group cursor-pointer rounded overflow-hidden border border-slate-700 hover:border-blue-400 bg-slate-900 transition-colors"
                         title="Click to view full image"
                       >
-                        <Image
+                        <SmartImage
                           src={project.img}
                           alt={project.alt || project.title}
                           className="w-full h-auto block object-cover"
@@ -304,6 +309,8 @@ const Projects = () => {
                           alt: p.alt,
                           caption: p.title,
                           link: p.originalUrl,
+                          width: p.img.width,
+                          height: p.img.height,
                         })),
                         i,
                       )
@@ -311,7 +318,7 @@ const Projects = () => {
                     className="relative group cursor-pointer aspect-video border-b border-slate-700 overflow-hidden bg-slate-900"
                     title="Click to view full image"
                   >
-                    <Image
+                    <SmartImage
                       src={project.img}
                       alt={project.alt}
                       className="w-full h-full object-cover"

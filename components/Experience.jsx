@@ -1,7 +1,7 @@
 // animate in view component
 import Hoc from "./Hoc";
+import SmartImage from "./SmartImage";
 import { experiences } from "../data/experiences";
-import Image from "next/image";
 import { FiMaximize2, FiExternalLink } from "react-icons/fi";
 import { useImageModal } from "./ImageModal";
 
@@ -69,6 +69,8 @@ const Experience = () => {
                                 alt: item.name,
                                 caption: item.name,
                                 link: item.link,
+                                width: item.width,
+                                height: item.height,
                               })),
                               imgIdx,
                             )
@@ -76,7 +78,7 @@ const Experience = () => {
                           className="relative group cursor-pointer rounded border border-slate-700 hover:border-blue-400 overflow-hidden transition-colors duration-150 bg-slate-900"
                           title={`Click to view full image: ${name}`}
                         >
-                          <Image
+                          <SmartImage
                             src={src}
                             alt={name}
                             width={width}

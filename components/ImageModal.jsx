@@ -1,5 +1,18 @@
-import { createContext, useContext, useState, useEffect, useCallback } from "react";
-import { FiX, FiChevronLeft, FiChevronRight, FiExternalLink } from "react-icons/fi";
+import {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  useCallback,
+  useRef,
+} from "react";
+import Image from "next/image";
+import {
+  FiX,
+  FiChevronLeft,
+  FiChevronRight,
+  FiExternalLink,
+} from "react-icons/fi";
 
 const ImageModalContext = createContext({
   openImage: () => {},
@@ -9,9 +22,11 @@ export const useImageModal = () => useContext(ImageModalContext);
 
 export const ImageModalProvider = ({ children }) => {
   const [modalState, setModalState] = useState(null);
-  // modalState: { items: [{ src, alt, caption, link }], index: 0 }
+  const [isLoaded, setIsLoaded] = useState(false);
+  const imgRef = useRef(null);
 
   const openImage = useCallback((itemOrItems, startIndex = 0) => {
+    setIsLoaded(false);
     if (Array.isArray(itemOrItems)) {
       setModalState({ items: itemOrItems, index: startIndex });
     } else {
@@ -21,35 +36,57 @@ export const ImageModalProvider = ({ children }) => {
 
   const closeModal = useCallback(() => {
     setModalState(null);
+    setIsLoaded(false);
   }, []);
 
-  const showPrev = useCallback(
-    (e) => {
-      if (e) e.stopPropagation();
-      setModalState((prev) => {
-        if (!prev || prev.items.length <= 1) return prev;
-        return {
-          ...prev,
-          index: (prev.index - 1 + prev.items.length) % prev.items.length,
-        };
-      });
-    },
-    [],
-  );
+  const showPrev = useCallback((e) => {
+    if (e) e.stopPropagation();
+    setModalState((prev) => {
+      if (!prev || prev.items.length <= 1) return prev;
+      setIsLoaded(false);
+      return {
+        ...prev,
+        index: (prev.index - 1 + prev.items.length) % prev.items.length,
+      };
+    });
+  }, []);
 
-  const showNext = useCallback(
-    (e) => {
-      if (e) e.stopPropagation();
-      setModalState((prev) => {
-        if (!prev || prev.items.length <= 1) return prev;
-        return {
-          ...prev,
-          index: (prev.index + 1) % prev.items.length,
-        };
-      });
-    },
-    [],
-  );
+  const showNext = useCallback((e) => {
+    if (e) e.stopPropagation();
+    setModalState((prev) => {
+      if (!prev || prev.items.length <= 1) return prev;
+      setIsLoaded(false);
+      return {
+        ...prev,
+        index: (prev.index + 1) % prev.items.length,
+      };
+    });
+  }, []);
+
+  const currentItem = modalState ? modalState.items[modalState.index] : null;
+  const hasMultiple = modalState && modalState.items.length > 1;
+  const resolvedSrc =
+    currentItem && typeof currentItem.src === "object"
+      ? currentItem.src.src
+      : currentItem?.src;
+
+  const imgWidth =
+    currentItem?.width ||
+    (typeof currentItem?.src === "object" ? currentItem.src.width : 1024);
+  const imgHeight =
+    currentItem?.height ||
+    (typeof currentItem?.src === "object" ? currentItem.src.height : 527);
+
+  useEffect(() => {
+    if (!resolvedSrc) return;
+    if (
+      imgRef.current &&
+      imgRef.current.complete &&
+      imgRef.current.naturalWidth > 0
+    ) {
+      setIsLoaded(true);
+    }
+  }, [resolvedSrc, modalState?.index]);
 
   useEffect(() => {
     if (!modalState) return;
@@ -67,13 +104,6 @@ export const ImageModalProvider = ({ children }) => {
       document.body.style.overflow = "";
     };
   }, [modalState, closeModal, showPrev, showNext]);
-
-  const currentItem = modalState ? modalState.items[modalState.index] : null;
-  const hasMultiple = modalState && modalState.items.length > 1;
-  const resolvedSrc =
-    currentItem && typeof currentItem.src === "object"
-      ? currentItem.src.src
-      : currentItem?.src;
 
   return (
     <ImageModalContext.Provider value={{ openImage }}>
@@ -129,25 +159,48 @@ export const ImageModalProvider = ({ children }) => {
               <button
                 type="button"
                 onClick={showPrev}
-                className="absolute left-2 sm:left-6 z-10 p-2.5 rounded bg-slate-900 hover:bg-slate-800 text-white border border-slate-700 transition-colors"
+                className="absolute left-2 sm:left-6 z-20 p-2.5 rounded bg-slate-900 hover:bg-slate-800 text-white border border-slate-700 transition-colors"
                 aria-label="Previous image"
               >
                 <FiChevronLeft className="text-xl" />
               </button>
             )}
 
-            <img
-              src={resolvedSrc}
-              alt={currentItem.alt || currentItem.caption || "Preview"}
+            <div
               onClick={(e) => e.stopPropagation()}
-              className="max-h-[78vh] max-w-[90vw] w-auto h-auto object-contain rounded border border-slate-700 bg-slate-900"
-            />
+              style={{
+                aspectRatio: `${imgWidth} / ${imgHeight}`,
+                width: `min(90vw, calc(78vh * ${imgWidth} / ${imgHeight}))`,
+                height: `min(78vh, calc(90vw * ${imgHeight} / ${imgWidth}))`,
+              }}
+              className="relative rounded border border-slate-700 bg-slate-900 overflow-hidden"
+            >
+              {!isLoaded && (
+                <div
+                  className="absolute inset-0 bg-slate-800 animate-pulse"
+                  aria-hidden="true"
+                />
+              )}
+              <Image
+                key={resolvedSrc}
+                ref={imgRef}
+                src={currentItem.src}
+                alt={currentItem.alt || currentItem.caption || "Preview"}
+                width={imgWidth}
+                height={imgHeight}
+                unoptimized
+                onLoad={() => setIsLoaded(true)}
+                className={`w-full h-full object-contain block transition-opacity duration-200 ${
+                  isLoaded ? "opacity-100" : "opacity-0"
+                }`}
+              />
+            </div>
 
             {hasMultiple && (
               <button
                 type="button"
                 onClick={showNext}
-                className="absolute right-2 sm:right-6 z-10 p-2.5 rounded bg-slate-900 hover:bg-slate-800 text-white border border-slate-700 transition-colors"
+                className="absolute right-2 sm:right-6 z-20 p-2.5 rounded bg-slate-900 hover:bg-slate-800 text-white border border-slate-700 transition-colors"
                 aria-label="Next image"
               >
                 <FiChevronRight className="text-xl" />

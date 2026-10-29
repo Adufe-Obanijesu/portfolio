@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiDownload } from "react-icons/fi";
+import SmartImage from "./SmartImage";
 
 // image
 import profilePic from "../public/images/pixs.jpg";
@@ -51,14 +51,17 @@ const Sidebar = ({ show, setShow }) => {
                 src: profilePic,
                 alt: "Obanijesu Adufe",
                 caption: "Obanijesu Adufe — Frontend Developer",
+                width: profilePic.width,
+                height: profilePic.height,
               })
             }
-            className="rounded-full overflow-hidden border-2 border-slate-700 hover:border-blue-400 transition-colors cursor-pointer"
+            className="xl:h-44 xl:w-44 lg:h-52 md:h-28 lg:w-52 md:w-28 w-40 h-40 rounded-full overflow-hidden border-2 border-slate-700 hover:border-blue-400 transition-colors cursor-pointer"
             title="Click to view full photo"
           >
-            <Image
+            <SmartImage
               src={profilePic}
-              className="xl:h-44 xl:w-44 lg:h-52 md:h-28 lg:w-52 md:w-28 w-40 h-40 object-cover block"
+              className="w-full h-full object-cover block"
+              skeletonClassName="rounded-full"
               alt="Adufe Obanijesu"
             />
           </button>
